@@ -7,16 +7,209 @@ libs:
   fittoscreen:
     mode: scaleFit
   mouse: {}
-  keyboard: {}
   keyboard.polyfill: {}
   sound.howler: {}
-textures: []
+  keyboard: {}
+textures:
+  - name: character
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i668f788b-6f68-48e4-930a-96031ac4c855.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 668f788b-6f68-48e4-930a-96031ac4c855
+    padding: 1
+  - name: platform
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i8d783880-888a-441f-8b64-7e75d11c5562.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 8d783880-888a-441f-8b64-7e75d11c5562
+    padding: 1
 skeletons: []
-types: []
+types:
+  - name: character
+    depth: 0
+    oncreate: |-
+      this.JumpSpeed = -9;
+      this.gravity = 0.5;
+      this.hspd = 0; 
+      this.vspd = 0;
+    onstep: |-
+      this.speed = 4 * ct.delta;
+      if (ct.actions.Move.down) {
+          if (ct.actions.Move.value > 0){
+              this.hspd = this.speed;
+          } else{
+              this.hspd = - this.speed;
+          }
+      } else{
+          this.hspd = 0;
+      }
+
+      if (ct.place.occupied(this, this.x, this.y + 1, "Solid")){
+          if (ct.actions.Jump.down){
+              this.vspd = this.speed;
+          } else{
+              this.vspd = 0;
+          }
+      } else {
+          this.vspd += this.gravity * ct.delta;
+      }
+
+      for(var i = 0; i < Math.abs(this.hspd); ++i){
+          if(ct.place.free(this, this.x + Math.sign(this.hspd) , this.y, 'Solid')){
+              this.x += Math.sign(this.hspd);
+          } else {
+              break;
+          }
+      }
+
+      for(var i = 0; i < Math.abs(this.vspd); ++i){
+          if(ct.place.free(this, this.x, this.y + Math.sign(this.vspd), 'Solid')){
+              this.y += Math.sign(this.vspd);
+          } else {
+              break;
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 668f788b-6f68-48e4-930a-96031ac4c855
+    extends: {}
+    uid: 5aec5e70-04ba-4b77-a18e-78a54b518891
+    lastmod: 1627161409554
+  - name: platform
+    depth: 0
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 8d783880-888a-441f-8b64-7e75d11c5562
+    extends:
+      ctype: Solid
+    uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+    lastmod: 1627161550084
 sounds: []
 styles: []
-rooms: []
-actions: []
+rooms:
+  - name: Room_1
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds: []
+    copies:
+      - x: 0
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 128
+        uid: 5aec5e70-04ba-4b77-a18e-78a54b518891
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: f40debe2-5361-4f90-94b8-dd672854f7b7
+    thumbnail: dd672854f7b7
+    extends: {}
+    gridX: 64
+    gridY: 64
+    lastmod: 1627157393180
+actions:
+  - name: Move
+    methods:
+      - code: keyboard.ArrowRight
+      - code: keyboard.ArrowLeft
+        multiplier: -1
+      - code: keyboard.KeyA
+        multiplier: -1
+      - code: keyboard.KeyD
+  - name: Jump
+    methods:
+      - code: keyboard.Space
+      - code: keyboard.KeyW
+      - code: keyboard.ArrowUp
 emitterTandems: []
 scripts: []
 starting: 0
@@ -48,3 +241,4 @@ settings:
     invertPreloaderScheme: true
   fps: 30
 fonts: []
+palette: []
