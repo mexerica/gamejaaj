@@ -157,6 +157,309 @@ textures:
     bottom: 64
     uid: e2c6dd60-8210-491b-8c52-7741cb7d7db5
     padding: 1
+  - name: idle1
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 49
+      - 28
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: i849c9222-f9a9-436e-8b0f-6e65266e5c17.png
+    shape: circle
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: 849c9222-f9a9-436e-8b0f-6e65266e5c17
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\idle1.png
+    lastmod: 1627318381008
+    r: 30
+  - name: andando1
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 42
+      - 30
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: i25f46c10-19bd-4763-aa5f-e476ab5ea8a5.png
+    shape: circle
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: 25f46c10-19bd-4763-aa5f-e476ab5ea8a5
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\andando1.png
+    lastmod: 1627318399052
+    r: 30
+  - name: andando2
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: ic9a53b02-b33c-4709-8bc6-65b1b4bbec38.png
+    shape: rect
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: c9a53b02-b33c-4709-8bc6-65b1b4bbec38
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\andando2.png
+  - name: andando3
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: i2c70825c-ce44-4137-9c91-1636fdefde61.png
+    shape: rect
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: 2c70825c-ce44-4137-9c91-1636fdefde61
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\andando3.png
+  - name: andando4
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: i4827a4ad-190c-41fb-90fe-7977cc37a622.png
+    shape: rect
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: 4827a4ad-190c-41fb-90fe-7977cc37a622
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\andando4.png
+  - name: andando5
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: ifb43153c-d531-47a8-8870-873b244a9548.png
+    shape: rect
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: fb43153c-d531-47a8-8870-873b244a9548
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\andando5.png
+  - name: andando6
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: i776458c2-8995-40a0-872b-be08155d134a.png
+    shape: rect
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: 776458c2-8995-40a0-872b-be08155d134a
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\andando6.png
+  - name: andando7
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: iaabb5137-ec8f-4cca-9a8b-8fc508c14be3.png
+    shape: rect
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: aabb5137-ec8f-4cca-9a8b-8fc508c14be3
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\andando7.png
+  - name: andando8
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: ia1af2503-ecba-46c4-aaf0-64627bcb8b09.png
+    shape: rect
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: a1af2503-ecba-46c4-aaf0-64627bcb8b09
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\andando8.png
+  - name: andando9
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 61
+    width: 85
+    height: 61
+    offx: 0
+    offy: 0
+    origname: i4fb5716a-652a-4c90-b949-a50df9d383c7.png
+    shape: rect
+    left: 0
+    right: 85
+    top: 0
+    bottom: 61
+    uid: 4fb5716a-652a-4c90-b949-a50df9d383c7
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\andando9.png
+  - name: floresta
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 494
+    width: 927
+    height: 494
+    offx: 0
+    offy: 0
+    origname: ie46cd459-1951-4e9a-8bae-a81662c16659.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 494
+    uid: e46cd459-1951-4e9a-8bae-a81662c16659
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (2)\gamejaaj-main\game
+      jaaj\gamejaaj\img\floresta.png
+    tiled: true
+    lastmod: 1627317762845
 skeletons: []
 types:
   - name: character
@@ -175,17 +478,23 @@ types:
       this.speed = 4 * ct.delta;
       if (ct.actions.Move.down) {
           if (ct.actions.Move.value > 0){
+              this.scale.x = 1;
               this.hspd = this.speed;
-          } else{
+              this.tex = 'andando1';
+              this.play();
+          } else {
+              this.scale.x = -1;
               this.hspd = - this.speed;
-          }
+              this.tex = 'andando1'; 
+          }   
       } else{
+          this.tex = 'idle1';
           this.hspd = 0;
       }
 
       if (ct.place.occupied(this, this.x, this.y + 1, "Solid")){
           if (ct.actions.Jump.down){
-              this.vspd = this.Jumpspeed;
+              this.vspd = this.JumpSpeed;
           } else{
               this.vspd = 0;
           }
@@ -222,10 +531,10 @@ types:
       } 
     ondraw: ''
     ondestroy: ''
-    texture: 668f788b-6f68-48e4-930a-96031ac4c855
+    texture: 849c9222-f9a9-436e-8b0f-6e65266e5c17
     extends: {}
     uid: 5aec5e70-04ba-4b77-a18e-78a54b518891
-    lastmod: 1627252029463
+    lastmod: 1627315939325
   - name: platform
     depth: 0
     oncreate: ''
@@ -292,6 +601,16 @@ types:
     extends: {}
     uid: 5ca79e0b-fab3-4a2c-b929-ab0322880caa
     lastmod: 1627254546925
+  - name: NewType
+    depth: 0
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: -1
+    extends: {}
+    uid: 3236aafa-aec1-48b2-abeb-ea7a45cae1be
+    lastmod: 1627316213441
 sounds: []
 styles:
   - name: main
@@ -417,7 +736,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627251954918
+    lastmod: 1627317776122
   - name: Room_02
     oncreate: ''
     onstep: ''
@@ -642,7 +961,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627250520524
+    lastmod: 1627315943651
   - name: Room_03
     oncreate: ''
     onstep: ''
@@ -766,7 +1085,7 @@ settings:
     version:
       - 0
       - 0
-      - 3
+      - 4
     versionPostfix: ''
   rendering:
     usePixiLegacy: true
