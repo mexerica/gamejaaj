@@ -214,7 +214,7 @@ textures:
     source: >-
       C:\Users\Ricardo\Documents\Repositorios\gamejaaj\game
       jaaj\gamejaaj\img\catoMotor.png
-    lastmod: 1627333383402
+    lastmod: 1627397199975
   - name: catoIdle
     untill: 0
     grid:
@@ -242,7 +242,7 @@ textures:
     source: >-
       C:\Users\Ricardo\Documents\Repositorios\gamejaaj\game
       jaaj\gamejaaj\img\catoIdle.png
-    lastmod: 1627334664720
+    lastmod: 1627397198191
   - name: catoRotom
     untill: 0
     grid:
@@ -270,7 +270,7 @@ textures:
     source: >-
       C:\Users\flaud\Downloads\gamejaaj-main (1)\gamejaaj-main\game
       jaaj\gamejaaj\img\catoRotom.png
-    lastmod: 1627333393891
+    lastmod: 1627397201568
   - name: florestaFundo
     untill: 0
     grid:
@@ -519,6 +519,32 @@ textures:
     uid: 8514c8b6-3a50-4bb9-b9b1-3a1c453d59b3
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\floresta\fundo\florestaBaixo.png'
+  - name: agua
+    untill: 0
+    grid:
+      - 4
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 388
+    imgHeight: 64
+    width: 97
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i86723ec2-9fcc-4e37-b576-7738059d7284.png
+    shape: rect
+    left: 0
+    right: 388
+    top: 0
+    bottom: 64
+    uid: 86723ec2-9fcc-4e37-b576-7738059d7284
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\floresta\plataforma\agua.png'
+    lastmod: 1627397263935
 skeletons: []
 types:
   - name: character
