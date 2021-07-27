@@ -380,6 +380,145 @@ textures:
     source: >-
       C:\Users\flaud\Downloads\gamejaaj-main (1)\gamejaaj-main\game
       jaaj\gamejaaj\img\paradise.png
+  - name: florestaFundo4
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 494
+    width: 927
+    height: 494
+    offx: 0
+    offy: 0
+    origname: i27fb5173-6d88-455a-998d-f901e08ddb34.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 494
+    uid: 27fb5173-6d88-455a-998d-f901e08ddb34
+    padding: 1
+    source: >-
+      C:\Users\Ricardo\Documents\Repositorios\gamejaaj\game
+      jaaj\gamejaaj\img\florestaFundo4.png
+    tiled: true
+    lastmod: 1627354905352
+  - name: florestaFundo3
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 494
+    width: 927
+    height: 494
+    offx: 0
+    offy: 0
+    origname: ia29be3f2-87a2-4df0-be95-ca301f533091.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 494
+    uid: a29be3f2-87a2-4df0-be95-ca301f533091
+    padding: 1
+    source: >-
+      C:\Users\Ricardo\Documents\Repositorios\gamejaaj\game
+      jaaj\gamejaaj\img\florestaFundo3.png
+    tiled: true
+    lastmod: 1627354913174
+  - name: florestaFundo2
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 494
+    width: 927
+    height: 494
+    offx: 0
+    offy: 0
+    origname: ida8b036b-a12c-48da-83c6-48d2b2dfc74d.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 494
+    uid: da8b036b-a12c-48da-83c6-48d2b2dfc74d
+    padding: 1
+    source: >-
+      C:\Users\Ricardo\Documents\Repositorios\gamejaaj\game
+      jaaj\gamejaaj\img\florestaFundo2.png
+    tiled: true
+    lastmod: 1627354919438
+  - name: florestaFundo1
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 985
+    width: 927
+    height: 985
+    offx: 0
+    offy: 0
+    origname: i3d5e0dca-e6ea-45c0-8005-989b9bc2248b.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 985
+    uid: 3d5e0dca-e6ea-45c0-8005-989b9bc2248b
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\floresta\fundo\florestaBaixo.png'
+    tiled: true
+    lastmod: 1627386914687
+  - name: florestaBaixo
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 985
+    width: 927
+    height: 985
+    offx: 0
+    offy: 0
+    origname: i8514c8b6-3a50-4bb9-b9b1-3a1c453d59b3.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 985
+    uid: 8514c8b6-3a50-4bb9-b9b1-3a1c453d59b3
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\floresta\fundo\florestaBaixo.png'
 skeletons: []
 types:
   - name: character
@@ -582,9 +721,40 @@ rooms:
     width: 800
     height: 600
     backgrounds:
-      - depth: -1000
-        texture: af1253cc-fe09-49e7-a955-3779285c20c3
+      - depth: -100
+        texture: 27fb5173-6d88-455a-998d-f901e08ddb34
         extends: {}
+      - depth: -80
+        texture: a29be3f2-87a2-4df0-be95-ca301f533091
+        extends:
+          repeat: repeat-x
+          shiftX: 0
+          scaleX: 1
+          movementX: 0
+          parallaxX: 1.15
+          parallaxY: 1
+          scaleY: 1.25
+      - depth: -60
+        texture: da8b036b-a12c-48da-83c6-48d2b2dfc74d
+        extends:
+          repeat: repeat-x
+          movementX: 0
+          parallaxX: 1.1
+          parallaxY: 1
+          scaleX: 1
+          scaleY: 1.25
+          movementY: 0
+      - depth: -40
+        texture: 3d5e0dca-e6ea-45c0-8005-989b9bc2248b
+        extends:
+          scaleY: 1
+          repeat: repeat-x
+          shiftX: 0
+          shiftY: 24
+          parallaxX: 1.05
+          parallaxY: 1
+          movementX: 0
+          movementY: 0
     copies:
       - x: -192
         'y': 448
@@ -1503,14 +1673,6 @@ rooms:
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
       - x: 2624
-        'y': -64
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2624
-        'y': 0
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2624
         'y': 64
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
@@ -1955,10 +2117,6 @@ rooms:
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
       - x: 704
-        'y': 704
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 704
         'y': 640
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
@@ -2087,10 +2245,6 @@ rooms:
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
       - x: 2752
-        'y': 704
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2752
         'y': 640
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
@@ -2114,10 +2268,6 @@ rooms:
         'y': 640
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
-      - x: 3264
-        'y': 704
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
       - x: 3200
         'y': 640
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
@@ -2128,10 +2278,6 @@ rooms:
         exts: {}
       - x: 3264
         'y': 640
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 3392
-        'y': 704
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
       - x: 3392
@@ -2463,7 +2609,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627340190218
+    lastmod: 1627386983491
   - name: Room_00
     oncreate: >-
       this.text = new PIXI.Text("Press space to continue!!!",
@@ -2493,7 +2639,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627315943651
+    lastmod: 1627354930802
   - name: Room_03
     oncreate: ''
     onstep: ''
@@ -2524,9 +2670,29 @@ rooms:
     width: 800
     height: 600
     backgrounds:
-      - depth: -1000
-        texture: af1253cc-fe09-49e7-a955-3779285c20c3
+      - depth: -100
+        texture: 27fb5173-6d88-455a-998d-f901e08ddb34
         extends: {}
+      - depth: -80
+        texture: a29be3f2-87a2-4df0-be95-ca301f533091
+        extends:
+          scaleX: 1
+          scaleY: 1.25
+          parallaxX: 1.15
+          repeat: repeat-x
+      - depth: -60
+        texture: da8b036b-a12c-48da-83c6-48d2b2dfc74d
+        extends:
+          scaleY: 1.25
+          parallaxX: 1.1
+          repeat: repeat-x
+      - depth: -40
+        texture: 3d5e0dca-e6ea-45c0-8005-989b9bc2248b
+        extends:
+          shiftY: 24
+          scaleY: 1
+          parallaxX: 1.05
+          repeat: repeat-x
     copies:
       - x: -192
         'y': 448
@@ -7097,7 +7263,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627343850032
+    lastmod: 1627387008890
 actions:
   - name: Move
     methods:
