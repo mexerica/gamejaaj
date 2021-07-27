@@ -545,6 +545,58 @@ textures:
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\floresta\plataforma\agua.png'
     lastmod: 1627397263935
+  - name: eslarmeMotor
+    untill: 0
+    grid:
+      - 5
+      - 1
+    axis:
+      - 32
+      - 60
+    marginx: 0
+    marginy: 0
+    imgWidth: 320
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i17853df6-6b13-4934-94e0-60f6a1ab24d3.png
+    shape: rect
+    left: 24
+    right: 24
+    top: 48
+    bottom: 0
+    uid: 17853df6-6b13-4934-94e0-60f6a1ab24d3
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\eslarme\eslarmeMotor.png'
+    lastmod: 1627402673481
+  - name: eslarmeIdle
+    untill: 0
+    grid:
+      - 8
+      - 1
+    axis:
+      - 32
+      - 60
+    marginx: 0
+    marginy: 0
+    imgWidth: 512
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: ic5126e0c-63ed-4d90-a63d-99a4725aecce.png
+    shape: rect
+    left: 24
+    right: 24
+    top: 48
+    bottom: 0
+    uid: c5126e0c-63ed-4d90-a63d-99a4725aecce
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\eslarme\eslarmeIdle.png'
+    lastmod: 1627403649588
 skeletons: []
 types:
   - name: character
