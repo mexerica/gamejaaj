@@ -1,0 +1,7155 @@
+ctjsVersion: 1.7.0
+notes: /* empty */
+libs:
+  place:
+    gridX: 1024
+    gridY: 1024
+  fittoscreen:
+    mode: scaleFit
+  mouse: {}
+  keyboard.polyfill: {}
+  sound.howler: {}
+  keyboard: {}
+textures:
+  - name: character
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i668f788b-6f68-48e4-930a-96031ac4c855.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 668f788b-6f68-48e4-930a-96031ac4c855
+    padding: 1
+    lastmod: 1627251345733
+  - name: platform
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i8d783880-888a-441f-8b64-7e75d11c5562.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 8d783880-888a-441f-8b64-7e75d11c5562
+    padding: 1
+  - name: trigger
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: iae1a8617-8eba-4789-9c69-01c80ea927e4.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: ae1a8617-8eba-4789-9c69-01c80ea927e4
+    padding: 1
+    lastmod: 1627337320483
+  - name: spike
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i67c5d1e3-4efa-4578-abc4-4d579952115d.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 67c5d1e3-4efa-4578-abc4-4d579952115d
+    padding: 1
+  - name: coin
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i40228046-5509-4911-bdea-14b8f73680aa.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 40228046-5509-4911-bdea-14b8f73680aa
+    padding: 1
+    lastmod: 1627251807736
+  - name: Act
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: ie2c6dd60-8210-491b-8c52-7741cb7d7db5.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: e2c6dd60-8210-491b-8c52-7741cb7d7db5
+    padding: 1
+  - name: floresta
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 985
+    width: 927
+    height: 985
+    offx: 0
+    offy: 0
+    origname: ie46cd459-1951-4e9a-8bae-a81662c16659.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 985
+    uid: e46cd459-1951-4e9a-8bae-a81662c16659
+    padding: 1
+    source: >-
+      C:\Users\Ricardo\Documents\Repositorios\gamejaaj\game
+      jaaj\gamejaaj\img\floresta.png
+    tiled: true
+    lastmod: 1627334817858
+  - name: catoMotor
+    untill: 0
+    grid:
+      - 4
+      - 1
+    axis:
+      - 39
+      - 62
+    marginx: 4
+    marginy: 4
+    imgWidth: 312
+    imgHeight: 68
+    width: 74
+    height: 68
+    offx: 0
+    offy: 0
+    origname: i2fc62a73-fbfa-4dca-96a7-2d6679105d5e.png
+    shape: rect
+    left: 22
+    right: 26
+    top: 49
+    bottom: 0
+    uid: 2fc62a73-fbfa-4dca-96a7-2d6679105d5e
+    padding: 0
+    source: >-
+      C:\Users\Ricardo\Documents\Repositorios\gamejaaj\game
+      jaaj\gamejaaj\img\catoMotor.png
+    lastmod: 1627333383402
+  - name: catoIdle
+    untill: 0
+    grid:
+      - 6
+      - 1
+    axis:
+      - 37
+      - 62
+    marginx: 4
+    marginy: 4
+    imgWidth: 468
+    imgHeight: 68
+    width: 74
+    height: 68
+    offx: 0
+    offy: 0
+    origname: i84408621-a294-4147-a112-3533b6e1f4a5.png
+    shape: rect
+    left: 15
+    right: 15
+    top: 49
+    bottom: 0
+    uid: 84408621-a294-4147-a112-3533b6e1f4a5
+    padding: 1
+    source: >-
+      C:\Users\Ricardo\Documents\Repositorios\gamejaaj\game
+      jaaj\gamejaaj\img\catoIdle.png
+    lastmod: 1627334664720
+  - name: catoRotom
+    untill: 0
+    grid:
+      - 4
+      - 1
+    axis:
+      - 39
+      - 62
+    marginx: 0
+    marginy: 0
+    imgWidth: 312
+    imgHeight: 68
+    width: 78
+    height: 68
+    offx: 0
+    offy: 0
+    origname: iebcc2e79-6c6d-482a-99d7-c7da7c8a01ab.png
+    shape: rect
+    left: 22
+    right: 26
+    top: 49
+    bottom: 0
+    uid: ebcc2e79-6c6d-482a-99d7-c7da7c8a01ab
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (1)\gamejaaj-main\game
+      jaaj\gamejaaj\img\catoRotom.png
+    lastmod: 1627333393891
+  - name: florestaFundo
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 494
+    width: 927
+    height: 494
+    offx: 0
+    offy: 0
+    origname: iaf1253cc-fe09-49e7-a955-3779285c20c3.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 494
+    uid: af1253cc-fe09-49e7-a955-3779285c20c3
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (1)\gamejaaj-main\game
+      jaaj\gamejaaj\img\florestaFundo.png
+    tiled: true
+    lastmod: 1627333565857
+  - name: Placeholder
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i395580fd-e195-40c9-8bbe-bf0e82963b01.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 395580fd-e195-40c9-8bbe-bf0e82963b01
+    padding: 1
+  - name: paradise_-_Copia
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 1350
+    imgHeight: 629
+    width: 1350
+    height: 629
+    offx: 0
+    offy: 0
+    origname: i39e15987-5278-40ca-9068-a03b74da45ec.png
+    shape: rect
+    left: 0
+    right: 1350
+    top: 0
+    bottom: 629
+    uid: 39e15987-5278-40ca-9068-a03b74da45ec
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (1)\gamejaaj-main\game
+      jaaj\gamejaaj\img\paradise - Copia.png
+    tiled: true
+    lastmod: 1627343844202
+  - name: paradise
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 1350
+    imgHeight: 629
+    width: 1350
+    height: 629
+    offx: 0
+    offy: 0
+    origname: i4e3d8c23-27b2-49f5-a41c-169478585f79.png
+    shape: rect
+    left: 0
+    right: 1350
+    top: 0
+    bottom: 629
+    uid: 4e3d8c23-27b2-49f5-a41c-169478585f79
+    padding: 1
+    source: >-
+      C:\Users\flaud\Downloads\gamejaaj-main (1)\gamejaaj-main\game
+      jaaj\gamejaaj\img\paradise.png
+skeletons: []
+types:
+  - name: character
+    depth: -3
+    oncreate: |-
+      this.ctype = 'Hero';
+
+      this.tex = 'catoMotor'
+      this.play()
+      this.animationSpeed = 5/60
+
+      this.JumpSpeed = -9;
+      this.gravity = 0.5;
+      this.hspd = 0; 
+      this.vspd = 0;
+
+      this.got = false;
+      ct.camera.follow = this;
+      ct.camera.borderX = 450;
+      ct.camera.borderY = 200;
+    onstep: |2
+          this.speed = 4 * ct.delta
+
+          if (ct.actions.Move.down) {
+              if (ct.actions.Move.value > 0) {
+                  this.scale.x = 1
+                  this.hspd = this.speed
+                  if (this.tex !== 'catoMotor') {
+                      this.tex = 'catoMotor'
+                      this.play()
+                   }   
+              } else {
+                  this.scale.x = -1
+                  this.hspd = - this.speed;
+                  if (this.tex !== 'catoRotom') {
+                      this.tex = 'catoRotom'
+                      this.play()
+                   }   
+              }
+          } else {
+              if (this.tex !== 'catoIdle') {
+                  this.tex = 'catoIdle'
+                  this.play()
+              }
+              this.hspd = 0
+          }
+
+          if (ct.place.occupied(this, this.x, this.y + 1, "Solid")){
+              if (ct.actions.Jump.down){
+                  this.vspd = this.JumpSpeed;
+              } else{
+                  this.vspd = 0;
+              }
+          } else {
+              this.vspd += this.gravity * ct.delta;
+          }
+
+          for(var i = 0; i < Math.abs(this.hspd); ++i){
+              if (ct.place.free(this, this.x + Math.sign(this.hspd) , this.y, 'Solid')) {
+                  this.x += Math.sign(this.hspd);
+              } else {
+                  break;
+              }
+          }
+
+          for(var i = 0; i < Math.abs(this.vspd); ++i){
+              if(ct.place.free(this, this.x, this.y + Math.sign(this.vspd), 'Solid')){
+                  this.y += Math.sign(this.vspd);
+              } else {
+                  break;
+              }
+          }
+
+          if (ct.place.occupied(this, this.x, this.y, 'Deadly')) {
+              ct.rooms.switch('Room_00');
+          }
+
+          if (ct.actions.Catch.down) {
+              if (ct.place.occupied(this, this.x, this.y, 'Colletable')){
+                  this.got = true;
+              } else if(ct.place.occupied(this, this.x, this.y, 'Reward') && (this.got === true)){
+                  ct.rooms.switch('Room_00');
+              }
+          } 
+    ondraw: ''
+    ondestroy: ''
+    texture: 2fc62a73-fbfa-4dca-96a7-2d6679105d5e
+    extends: {}
+    uid: 5aec5e70-04ba-4b77-a18e-78a54b518891
+    lastmod: 1627336427391
+  - name: platform
+    depth: 0
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 8d783880-888a-441f-8b64-7e75d11c5562
+    extends:
+      ctype: Solid
+    uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+    lastmod: 1627338593579
+  - name: trigger
+    depth: 0
+    oncreate: this.visible = false;
+    onstep: |-
+      if (ct.place.meet(this, 'character')){
+          if (ct.room.name == "Room_01"){
+              ct.rooms.switch('Room_02');
+          } else if (ct.room.name == "Room_02"){
+              ct.rooms.switch('Room_03');
+          } else if (ct.room.name == "Room_03"){
+              ct.rooms.switch('Room_04');
+          } 
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: ae1a8617-8eba-4789-9c69-01c80ea927e4
+    extends: {}
+    uid: e74f62f4-e8e6-41c9-90ec-12a52e474364
+    lastmod: 1627336447962
+  - name: spike
+    depth: 0
+    oncreate: this.ctype = 'Deadly';
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 67c5d1e3-4efa-4578-abc4-4d579952115d
+    extends: {}
+    uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+    lastmod: 1627338604761
+  - name: coin
+    depth: 0
+    oncreate: |-
+      this.ctype = 'Colletable';
+      this.visible = true;
+    onstep: >-
+      if (ct.place.occupied(this, this.x, this.y, 'Hero') &&
+      (ct.actions.Catch.down)) {
+           this.visible = false;
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 40228046-5509-4911-bdea-14b8f73680aa
+    extends: {}
+    uid: 488303d8-dfb4-478f-a46c-2df861ca436b
+    lastmod: 1627335534429
+  - name: Act
+    depth: 0
+    oncreate: |-
+      this.ctype = 'Reward';
+      this.visible = true;
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: e2c6dd60-8210-491b-8c52-7741cb7d7db5
+    extends: {}
+    uid: 5ca79e0b-fab3-4a2c-b929-ab0322880caa
+    lastmod: 1627254546925
+  - name: NewType
+    depth: 0
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: -1
+    extends: {}
+    uid: 3236aafa-aec1-48b2-abeb-ea7a45cae1be
+    lastmod: 1627338822963
+  - name: Placeholder
+    depth: 0
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 395580fd-e195-40c9-8bbe-bf0e82963b01
+    extends:
+      ctype: Solid
+    uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+    lastmod: 1627338599900
+sounds: []
+styles:
+  - name: main
+    uid: 13b10fff-0090-4cd7-98cb-4c79552533bc
+    origname: s4c79552533bc
+    font:
+      family: sans-serif
+      size: 20
+      weight: '800'
+      italic: false
+    lastmod: 1627249550251
+    fill:
+      type: '0'
+      color: '#0037FF'
+rooms:
+  - name: Room_01
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds:
+      - depth: -1000
+        texture: af1253cc-fe09-49e7-a955-3779285c20c3
+        extends: {}
+    copies:
+      - x: -192
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 384
+        uid: 5aec5e70-04ba-4b77-a18e-78a54b518891
+        exts: {}
+      - x: 128
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 512
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 576
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 640
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 640
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 640
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 704
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 704
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 768
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 832
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 832
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 896
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 960
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 960
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1024
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1024
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 576
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 576
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 576
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1408
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1408
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1408
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1472
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1472
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1472
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 384
+        uid: 488303d8-dfb4-478f-a46c-2df861ca436b
+        exts: {}
+      - x: 1600
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1600
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1600
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1664
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1664
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1664
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': -0.0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': -0.0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': -0.0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': -0.0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': -0.0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2688
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2688
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2688
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2816
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2816
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2816
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2880
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2880
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2880
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2944
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2944
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2944
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3072
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3072
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3072
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3136
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3200
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3136
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3200
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3136
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3200
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3456
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3456
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3456
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3520
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3520
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3520
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 384
+        uid: 5ca79e0b-fab3-4a2c-b929-ab0322880caa
+        exts: {}
+      - x: 3328
+        'y': 384
+        uid: e74f62f4-e8e6-41c9-90ec-12a52e474364
+        exts: {}
+      - x: 3328
+        'y': 320
+        uid: e74f62f4-e8e6-41c9-90ec-12a52e474364
+        exts: {}
+      - x: 384
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 384
+        uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: -512
+        'y': 384
+        uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: -704
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1408
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1472
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1600
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1664
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2688
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2816
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2944
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2880
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3072
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3136
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3200
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3456
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3520
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': -0.0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: f40debe2-5361-4f90-94b8-dd672854f7b7
+    thumbnail: dd672854f7b7
+    extends: {}
+    gridX: 64
+    gridY: 64
+    lastmod: 1627340190218
+  - name: Room_00
+    oncreate: >-
+      this.text = new PIXI.Text("Press space to continue!!!",
+      ct.styles.get("main"));
+
+      this.text.x = 10;
+
+      this.text.y = 10;
+
+      this.addChild(this.text);
+    onstep: |-
+      if (ct.actions.Launch.down){
+          ct.rooms.switch('Room_01');
+      }
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds: []
+    copies: []
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: cb4ffe34-0699-409e-a94f-894bec5c8b95
+    thumbnail: 894bec5c8b95
+    extends: {}
+    gridX: 64
+    gridY: 64
+    lastmod: 1627315943651
+  - name: Room_03
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds:
+      - depth: 0
+        texture: 39e15987-5278-40ca-9068-a03b74da45ec
+        extends: {}
+    copies: []
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: f477462c-aa51-4163-99ca-4858d01d1168
+    thumbnail: 4858d01d1168
+    extends: {}
+    gridX: 64
+    gridY: 64
+    lastmod: 1627343874165
+  - name: Room_02
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds:
+      - depth: -1000
+        texture: af1253cc-fe09-49e7-a955-3779285c20c3
+        extends: {}
+    copies:
+      - x: -192
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 384
+        uid: 5aec5e70-04ba-4b77-a18e-78a54b518891
+        exts: {}
+      - x: 128
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 512
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 576
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 640
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 640
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 640
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 704
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 704
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 768
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 832
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 832
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 896
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 960
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 960
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1024
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1024
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 576
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 576
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1152
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 448
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 576
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 512
+        uid: 0b3e6c51-7593-4ebf-abbb-8447433497aa
+        exts: {}
+      - x: 1216
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1408
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1408
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1408
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1472
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1472
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1472
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 384
+        uid: 488303d8-dfb4-478f-a46c-2df861ca436b
+        exts: {}
+      - x: 1600
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1600
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1600
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1664
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1664
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1664
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2688
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2688
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2688
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2816
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2816
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2816
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2880
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2880
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2880
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2944
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2944
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2944
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3072
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3072
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3072
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3136
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3200
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3136
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3200
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3136
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3200
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3456
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3456
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3456
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3520
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3520
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3520
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 384
+        uid: 5ca79e0b-fab3-4a2c-b929-ab0322880caa
+        exts: {}
+      - x: 3328
+        'y': 384
+        uid: e74f62f4-e8e6-41c9-90ec-12a52e474364
+        exts: {}
+      - x: 3328
+        'y': 320
+        uid: e74f62f4-e8e6-41c9-90ec-12a52e474364
+        exts: {}
+      - x: 384
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1344
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1408
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1472
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1536
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1600
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1664
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1728
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1792
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1856
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1984
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1920
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2048
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2112
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2176
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2240
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2304
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2368
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2432
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2560
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2496
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2624
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2688
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2816
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2752
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2944
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 2880
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3008
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3072
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3136
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3200
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3328
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3264
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3392
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3456
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3520
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 3584
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 384
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 320
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 256
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 192
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 128
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 0
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': -64
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 448
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 512
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 576
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 640
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -0.0
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -0.0
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -0.0
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -0.0
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -0.0
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -0.0
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1088
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1152
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1024
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 960
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 896
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 832
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 768
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 704
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1280
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1280
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1216
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 2048
+        uid: e74f62f4-e8e6-41c9-90ec-12a52e474364
+        exts: {}
+      - x: -384
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -512
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -576
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -448
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1344
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1408
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1472
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1536
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1600
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -832
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -896
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -960
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1024
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1664
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1792
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -640
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 2048
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1984
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -768
+        'y': 1920
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -704
+        'y': 1856
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -1216
+        'y': 1728
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 2048
+        uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: 384
+        'y': 1984
+        uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: 512
+        'y': 2048
+        uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: 512
+        'y': 1984
+        uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: 704
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 1216
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 1984
+        uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: 640
+        'y': 2048
+        uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: -384
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -320
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 2112
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 0
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 256
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 192
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 128
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 64
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -0.0
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -0.0
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -64
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -128
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -192
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -256
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: -384
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 320
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 384
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 512
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 448
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 576
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 640
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 704
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 832
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 768
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 896
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 960
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1024
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1088
+        'y': 2176
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+      - x: 1152
+        'y': 2240
+        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: fc97d371-1554-443a-9ebe-de4b6b9b2678
+    thumbnail: de4b6b9b2678
+    extends: {}
+    gridX: 64
+    gridY: 64
+    lastmod: 1627343850032
+actions:
+  - name: Move
+    methods:
+      - code: keyboard.ArrowRight
+      - code: keyboard.ArrowLeft
+        multiplier: -1
+      - code: keyboard.KeyA
+        multiplier: -1
+      - code: keyboard.KeyD
+  - name: Jump
+    methods:
+      - code: keyboard.Space
+      - code: keyboard.KeyW
+      - code: keyboard.ArrowUp
+  - name: Launch
+    methods:
+      - code: keyboard.Space
+  - name: Catch
+    methods:
+      - code: keyboard.ArrowDown
+      - code: keyboard.KeyS
+emitterTandems: []
+scripts: []
+starting: 0
+settings:
+  authoring:
+    author: Tiago and Ricardo
+    site: ''
+    title: '????'
+    version:
+      - 0
+      - 0
+      - 4
+    versionPostfix: ''
+  rendering:
+    usePixiLegacy: true
+    maxFPS: 60
+    pixelatedrender: true
+    highDensity: true
+    desktopMode: maximized
+  export:
+    windows: true
+    linux: true
+    mac: true
+    functionWrap: false
+    codeModifier: none
+  branding:
+    icon: -1
+    accent: '#446adb'
+    invertPreloaderScheme: true
+  fps: 30
+fonts: []
+palette: []
+startroom: cb4ffe34-0699-409e-a94f-894bec5c8b95
+styletick: .nan
