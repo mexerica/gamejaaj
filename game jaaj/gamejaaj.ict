@@ -597,6 +597,81 @@ textures:
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\eslarme\eslarmeIdle.png'
     lastmod: 1627403649588
+  - name: escada
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 25
+    imgHeight: 19
+    width: 25
+    height: 19
+    offx: 0
+    offy: 0
+    origname: i8c11fe98-db7e-460b-8543-21e5fee4c43a.png
+    shape: rect
+    left: 0
+    right: 25
+    top: 0
+    bottom: 19
+    uid: 8c11fe98-db7e-460b-8543-21e5fee4c43a
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\escada\escada.png'
+  - name: escadaBaixo
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 25
+    imgHeight: 22
+    width: 25
+    height: 22
+    offx: 0
+    offy: 0
+    origname: i5e217aba-ca69-4558-9be9-1bc62d26dd0f.png
+    shape: rect
+    left: 0
+    right: 25
+    top: 0
+    bottom: 22
+    uid: 5e217aba-ca69-4558-9be9-1bc62d26dd0f
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\escada\escadaBaixo.png'
+  - name: escadaCima
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 25
+    imgHeight: 22
+    width: 25
+    height: 22
+    offx: 0
+    offy: 0
+    origname: ie09bef70-1041-4405-a35d-8c5775d29ebe.png
+    shape: rect
+    left: 0
+    right: 25
+    top: 0
+    bottom: 22
+    uid: e09bef70-1041-4405-a35d-8c5775d29ebe
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\escada\escadaCima.png'
 skeletons: []
 types:
   - name: character
