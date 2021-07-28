@@ -1047,6 +1047,58 @@ textures:
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\plataforma\cidadePlatDir.png'
     lastmod: 1627482722809
+  - name: ummanoIdle
+    untill: 0
+    grid:
+      - 6
+      - 1
+    axis:
+      - 42
+      - 196
+    marginx: 0
+    marginy: 0
+    imgWidth: 510
+    imgHeight: 196
+    width: 85
+    height: 196
+    offx: 0
+    offy: 0
+    origname: i22d797b0-543e-4345-9dd8-5a9fe2ea939c.png
+    shape: rect
+    left: 15
+    right: 15
+    top: 192
+    bottom: 0
+    uid: 22d797b0-543e-4345-9dd8-5a9fe2ea939c
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\personagens\ummano\ummanoIdle.png'
+    lastmod: 1627493685180
+  - name: ummanoMotor
+    untill: 0
+    grid:
+      - 4
+      - 1
+    axis:
+      - 42
+      - 196
+    marginx: 0
+    marginy: 0
+    imgWidth: 340
+    imgHeight: 196
+    width: 85
+    height: 196
+    offx: 0
+    offy: 0
+    origname: ia5a6b27f-29dd-482b-a9d3-c6133a2ab268.png
+    shape: rect
+    left: 22
+    right: 22
+    top: 192
+    bottom: 0
+    uid: a5a6b27f-29dd-482b-a9d3-c6133a2ab268
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\personagens\ummano\ummanoMotor.png'
+    lastmod: 1627493751012
 skeletons: []
 types:
   - name: character
