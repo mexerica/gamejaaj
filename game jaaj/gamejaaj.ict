@@ -410,7 +410,7 @@ textures:
       C:\Users\Ricardo\Documents\Repositorios\gamejaaj\game
       jaaj\gamejaaj\img\florestaFundo4.png
     tiled: true
-    lastmod: 1627354905352
+    lastmod: 1627494562220
   - name: florestaFundo3
     untill: 0
     grid:
@@ -1099,6 +1099,114 @@ textures:
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\personagens\ummano\ummanoMotor.png'
     lastmod: 1627493751012
+  - name: florestaVermFundo
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 494
+    width: 927
+    height: 494
+    offx: 0
+    offy: 0
+    origname: i2100ac94-ecfd-4664-9b96-387d8809717f.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 494
+    uid: 2100ac94-ecfd-4664-9b96-387d8809717f
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\floresta\fundo\florestaVermFundo.png'
+    tiled: true
+    lastmod: 1627494571429
+  - name: florestaVerm3
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 494
+    width: 927
+    height: 494
+    offx: 0
+    offy: 0
+    origname: i4ddab811-107a-43e8-b76d-1bed7c397021.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 494
+    uid: 4ddab811-107a-43e8-b76d-1bed7c397021
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\floresta\fundo\florestaVerm3.png'
+    tiled: true
+    lastmod: 1627494591693
+  - name: florestaVerm2
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 494
+    width: 927
+    height: 494
+    offx: 0
+    offy: 0
+    origname: i829fab4d-45c8-458a-ab22-e3f0702b12be.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 494
+    uid: 829fab4d-45c8-458a-ab22-e3f0702b12be
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\floresta\fundo\florestaVerm2.png'
+    tiled: true
+    lastmod: 1627494600756
+  - name: florestaOutBaixo
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 927
+    imgHeight: 985
+    width: 927
+    height: 985
+    offx: 0
+    offy: 0
+    origname: ib1cb93d3-a647-4962-8a36-b042076a22e1.png
+    shape: rect
+    left: 0
+    right: 927
+    top: 0
+    bottom: 985
+    uid: b1cb93d3-a647-4962-8a36-b042076a22e1
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\floresta\fundo\florestaOutBaixo.png'
+    tiled: true
+    lastmod: 1627494610356
 skeletons: []
 types:
   - name: character
