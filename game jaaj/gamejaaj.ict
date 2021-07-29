@@ -1546,6 +1546,32 @@ textures:
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\gravida\gravida.png'
     lastmod: 1627572814889
+  - name: mulher
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 42
+      - 196
+    marginx: 0
+    marginy: 0
+    imgWidth: 85
+    imgHeight: 196
+    width: 85
+    height: 196
+    offx: 0
+    offy: 0
+    origname: i5467898f-523a-4487-b9d9-f2d770249438.png
+    shape: rect
+    left: 20
+    right: 15
+    top: 178
+    bottom: 0
+    uid: 5467898f-523a-4487-b9d9-f2d770249438
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\mulher\mulher.png'
+    lastmod: 1627578508627
 skeletons: []
 types:
   - name: character
@@ -2245,7 +2271,19 @@ types:
     texture: 628f196a-d402-4ce0-8e63-7a74c3123c37
     extends: {}
     uid: 868af742-b304-4c85-9e4e-e4ed2df6faca
-    lastmod: 1627572444986
+    lastmod: 1627578524291
+  - name: mulher
+    depth: -5
+    oncreate: |-
+      this.ctype = 'Reward';
+      this.visible = true;
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 5467898f-523a-4487-b9d9-f2d770249438
+    extends: {}
+    uid: 48f0e589-2ef3-4ff5-9876-9f57e08d0fcc
+    lastmod: 1627578526699
 sounds: []
 styles:
   - name: main
@@ -16121,13 +16159,13 @@ rooms:
         'y': 448
         uid: bdb21fb1-4756-4eee-9e2d-943e73123d1b
         exts: {}
-      - x: 2880
-        'y': 384
-        uid: 5ca79e0b-fab3-4a2c-b929-ab0322880caa
-        exts: {}
       - x: 2944
         'y': 448
         uid: bdb21fb1-4756-4eee-9e2d-943e73123d1b
+        exts: {}
+      - x: 2944
+        'y': 448
+        uid: 48f0e589-2ef3-4ff5-9876-9f57e08d0fcc
         exts: {}
     tiles:
       - depth: -10
