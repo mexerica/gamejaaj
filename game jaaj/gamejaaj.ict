@@ -1703,7 +1703,7 @@ types:
     texture: 2fc62a73-fbfa-4dca-96a7-2d6679105d5e
     extends: {}
     uid: 5aec5e70-04ba-4b77-a18e-78a54b518891
-    lastmod: 1627522296523
+    lastmod: 1627600612009
   - name: platformaFake
     depth: 2
     oncreate: ''
@@ -1733,7 +1733,7 @@ types:
     texture: ae1a8617-8eba-4789-9c69-01c80ea927e4
     extends: {}
     uid: e74f62f4-e8e6-41c9-90ec-12a52e474364
-    lastmod: 1627336447962
+    lastmod: 1627592814443
   - name: spike
     depth: -5
     oncreate: |-
@@ -1778,7 +1778,7 @@ types:
     texture: e2c6dd60-8210-491b-8c52-7741cb7d7db5
     extends: {}
     uid: 5ca79e0b-fab3-4a2c-b929-ab0322880caa
-    lastmod: 1627572454730
+    lastmod: 1627592851069
   - name: Placeholder
     depth: 0
     oncreate: ''
@@ -1792,24 +1792,24 @@ types:
     lastmod: 1627515152800
   - name: escadaBaixo
     depth: 0
-    oncreate: ''
+    oncreate: this.ctype = 'Grab';
     onstep: this.move();
     ondraw: ''
     ondestroy: ''
     texture: 5e217aba-ca69-4558-9be9-1bc62d26dd0f
     extends: {}
     uid: ef759957-aca5-4180-8ef6-9732f7ba4d34
-    lastmod: 1627441497833
+    lastmod: 1627595376100
   - name: escadaCima
     depth: 0
-    oncreate: ''
+    oncreate: this.ctype = 'Grab';
     onstep: this.move();
     ondraw: ''
     ondestroy: ''
     texture: e09bef70-1041-4405-a35d-8c5775d29ebe
     extends: {}
     uid: 4c7c486c-f8f1-4ca2-b439-920552a5abc3
-    lastmod: 1627409168601
+    lastmod: 1627595383592
   - name: eslarmeIdle
     depth: 0
     oncreate: |-
@@ -1858,7 +1858,7 @@ types:
               this.hspd = 0
           }
 
-          if (ct.place.occupied(this, this.x, this.y + 1, "Solid")){
+         if (ct.place.occupied(this, this.x, this.y + 1, "Solid")){
               if (ct.actions.Jump.down){
                   this.vspd = this.JumpSpeed;
               } else {
@@ -1910,18 +1910,15 @@ types:
                   this.scale.x = 1;
                   this.scale.y = 1; 
               } else if (ct.place.occupied(this, this.x, this.y, 'Colletable')){
-                  if (this.got1 === 0){
-                      this.got1 += 1;
-                      console.log(this.got1);
-                  }else if (this.got1 === 1){
-                      this.got += 1;
-                      console.log(this.got);
+                  if (this.got === 0){
+                      this.got = 1;
+                  }else if (this.got === 1){
+                      this.got = 2;
                   }else {
-                      this.got += 1;
-                      console.log(this.got);
+                      this.got = 3;
                   }
-              } else if (ct.place.occupied(this, this.x, this.y, 'Reward') && (this.got > 5)){
-                  ct.rooms.switch('Room_03');
+              } else if (ct.place.occupied(this, this.x, this.y, 'Reward') && (this.got === 3)){
+                  ct.rooms.switch('Room_04');
               }
           }
        
@@ -1930,7 +1927,7 @@ types:
     texture: c5126e0c-63ed-4d90-a63d-99a4725aecce
     extends: {}
     uid: 30282da3-7f99-47a5-a17a-8472d66a6487
-    lastmod: 1627528038884
+    lastmod: 1627600742388
   - name: notSolid
     depth: 0
     oncreate: ''
@@ -2031,14 +2028,14 @@ types:
     lastmod: 1627441327168
   - name: escada
     depth: 0
-    oncreate: ''
+    oncreate: this.ctype = 'Grab';
     onstep: this.move();
     ondraw: ''
     ondestroy: ''
     texture: 8c11fe98-db7e-460b-8543-21e5fee4c43a
     extends: {}
     uid: 737d2aa7-50f2-4e6f-ba1a-e4efad36022b
-    lastmod: 1627441535625
+    lastmod: 1627595366335
   - name: entrada
     depth: 1
     oncreate: ''
@@ -2105,13 +2102,14 @@ types:
       if (ct.place.occupied(this, this.x, this.y, 'Hero') &&
       (ct.actions.Catch.down)) {
            this.visible = false;
+           this.ctype = 'Not_Colletable';
       }
     ondraw: ''
     ondestroy: ''
     texture: 26a41f9f-fba2-4a7c-8b70-4135ddac7522
     extends: {}
     uid: 131f139d-088a-4df2-a551-7c28c5ab3884
-    lastmod: 1627527988635
+    lastmod: 1627593839425
   - name: ummanoIdle
     depth: 0
     oncreate: |-
@@ -2121,7 +2119,7 @@ types:
       this.play()
       this.animationSpeed = 4/60
 
-      this.JumpSpeed = -9;
+      this.JumpSpeed = -4;
       this.gravity = 0.5;
       this.hspd = 0; 
       this.vspd = 0;
@@ -2157,16 +2155,6 @@ types:
               this.hspd = 0
           }
 
-          if (ct.place.occupied(this, this.x, this.y + 1, "Solid")){
-              if (ct.actions.Jump.down){
-                  this.vspd = this.JumpSpeed;
-              } else{
-                  this.vspd = 0;
-              }
-          } else {
-              this.vspd += this.gravity * ct.delta;
-          }
-
           for(var i = 0; i < Math.abs(this.hspd); ++i){
               if (ct.place.free(this, this.x + Math.sign(this.hspd) , this.y, 'Solid')) {
                   this.x += Math.sign(this.hspd);
@@ -2194,12 +2182,19 @@ types:
                   ct.rooms.switch('Room_02');
               }
           } 
+
+          if (ct.place.occupied(this, this.x, this.y + 1, "Grab")){
+              this.vspd = this.JumpSpeed;
+          } else {
+              this.vspd += this.gravity * ct.delta;
+          }
+          
     ondraw: ''
     ondestroy: ''
     texture: 22d797b0-543e-4345-9dd8-5a9fe2ea939c
     extends: {}
     uid: bb0795a3-07de-41a6-bae2-96534e9a9056
-    lastmod: 1627508186934
+    lastmod: 1627595873147
   - name: plataformaFalsa
     depth: 3
     oncreate: ''
@@ -2301,7 +2296,7 @@ types:
     texture: 628f196a-d402-4ce0-8e63-7a74c3123c37
     extends: {}
     uid: 868af742-b304-4c85-9e4e-e4ed2df6faca
-    lastmod: 1627584398717
+    lastmod: 1627594096151
   - name: mulher
     depth: -5
     oncreate: |-
@@ -2326,6 +2321,32 @@ types:
     extends: {}
     uid: df671d6d-a006-4f29-bf8b-8455503845c3
     lastmod: 1627584403749
+  - name: caton
+    depth: 0
+    oncreate: |-
+      this.scale.x = -1
+      this.animationSpeed = 4/60;
+      this.play()
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 84408621-a294-4147-a112-3533b6e1f4a5
+    extends: {}
+    uid: 1dfc97a2-0806-4f6f-a143-feed7fd59a1a
+    lastmod: 1627600729295
+  - name: eslarme
+    depth: 0
+    oncreate: |-
+      this.scale.x = -1
+      this.animationSpeed = 5/60;
+      this.play()
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: c5126e0c-63ed-4d90-a63d-99a4725aecce
+    extends: {}
+    uid: 83dc3e9a-6a2e-4eec-9426-e641f2687f82
+    lastmod: 1627600749064
 sounds: []
 styles:
   - name: main
@@ -2336,14 +2357,61 @@ styles:
       size: 20
       weight: '800'
       italic: false
-    lastmod: 1627249550251
+    lastmod: 1627586329938
     fill:
       type: '0'
       color: '#0037FF'
+  - name: not_main
+    uid: 0119b5b0-2ff3-4ee5-85bb-8bbda504e911
+    origname: s8bbda504e911
+    font:
+      family: sans-serif
+      size: 20
+      weight: '800'
+      italic: false
+      wrap: true
+      wrapPosition: 473
+    lastmod: 1627591972603
+    fill:
+      type: '0'
+      color1: '#FF33E4'
+      color: '#FF1CE1'
+    shadow:
+      color: '#000000'
+      x: 0
+      'y': 0
+      blur: 0
 rooms:
   - name: Room_01
-    oncreate: ''
-    onstep: ''
+    oncreate: >-
+      this.text = new PIXI.Text("Não consigo encotrar meu colar! É a unica
+      lembrança que eu tenho do meu marido!", ct.styles.get("not_main"));
+
+      this.text.x = 3008;
+
+      this.text.y = 256;
+
+      this.thing = 0;
+
+      this.addChild(this.text);
+    onstep: |+
+      if (this.text.x <= 2972){
+          this.text.x = 3008;
+      } else {
+         this.text.x -= 0.25; 
+      }
+
+      if (this.text.y <= 220){
+          this.text.y = 256;
+      } else {
+         this.text.y -= 1; 
+      }
+
+
+        
+
+
+
     ondraw: ''
     onleave: ''
     width: 800
@@ -4317,7 +4385,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627572917362
+    lastmod: 1627594959340
   - name: Room_00
     oncreate: >-
       this.text = new PIXI.Text("Press space to continue!!!",
@@ -4347,7 +4415,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627515639816
+    lastmod: 1627586841230
   - name: Room_03
     oncreate: this.time = 0;
     onstep: |-
@@ -4376,8 +4444,27 @@ rooms:
     gridY: 64
     lastmod: 1627514818960
   - name: Room_02
-    oncreate: ''
-    onstep: ''
+    oncreate: >-
+      this.text = new PIXI.Text("Não acredito que derrubei meus brinquedos no
+      lixo!", ct.styles.get("not_main"));
+
+      this.text.x = 3008;
+
+      this.text.y = 256;
+
+      this.addChild(this.text);
+    onstep: |
+      if (this.text.x <= 2972){
+          this.text.x = 3008;
+      } else {
+         this.text.x -= 0.25; 
+      }
+
+      if (this.text.y <= 220){
+          this.text.y = 256;
+      } else {
+         this.text.y -= 1; 
+      }
     ondraw: ''
     onleave: ''
     width: 800
@@ -14385,10 +14472,80 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627583842139
+    lastmod: 1627595940226
   - name: Room_04
-    oncreate: ''
-    onstep: ''
+    oncreate: >-
+      this.text = new PIXI.Text("Não acredito que derrubei meus brinquedos no
+      lixo!", ct.styles.get("not_main"));
+
+      this.another = new PIXI.Text("Teste", ct.styles.get("not_main"));
+
+
+      this.text.x = 1280;
+
+      this.text.y = 256;
+
+      this.number = 0;
+
+      this.text.visible = false;
+
+      this.addChild(this.text);
+
+
+      this.another.x = this.text.x;
+
+      this.another.y = this.text.y;
+
+      this.number = 0;
+
+      this.another.visible = false;
+
+      this.addChild(this.another);
+    onstep: |-
+      if (this.text.visible != false){
+          if (this.text.x <= 1244){
+              this.text.x = 1280;
+          } else {
+              this.text.x -= 0.25; 
+          }
+
+          if (this.text.y <= 220){
+              this.text.y = 256;
+          } else {
+          this.text.y -= 1; 
+          } 
+          this.number +=1; 
+          console.log(this.number);
+      } 
+
+      if (this.another.visible != false){
+          if (this.another.x <= 1244){
+              this.another.x = 1280;
+          } else {
+              this.another.x -= 0.25; 
+          }
+
+          if (this.another.y <= 220){
+              this.another.y = 256;
+          } else {
+              this.another.y -= 1; 
+          } 
+          this.number +=1 
+          console.log(this.number);
+      }
+
+      if (ct.actions.Jump.down){
+          if (this.number === 0){
+              this.text.visible = true;
+          } 
+      }
+
+      if (this.number >= 800){
+          this.another.visible = false;
+      } else if (this.number >= 400){
+          this.text.visible = false;
+          this.another.visible = true; 
+      }
     ondraw: ''
     onleave: ''
     width: 800
@@ -16045,18 +16202,6 @@ rooms:
         'y': -128
         uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
         exts: {}
-      - x: 2432
-        'y': -128
-        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
-        exts: {}
-      - x: 2496
-        'y': -128
-        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
-        exts: {}
-      - x: 2560
-        'y': -128
-        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
-        exts: {}
       - x: 1856
         'y': 320
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
@@ -16189,10 +16334,6 @@ rooms:
         'y': 448
         uid: 471b8fc1-4576-4dc6-87a7-c3131d79ccb1
         exts: {}
-      - x: 2560
-        'y': -128
-        uid: 131f139d-088a-4df2-a551-7c28c5ab3884
-        exts: {}
       - x: 1344
         'y': 448
         uid: bb0795a3-07de-41a6-bae2-96534e9a9056
@@ -16208,6 +16349,146 @@ rooms:
       - x: 2944
         'y': 448
         uid: 48f0e589-2ef3-4ff5-9876-9f57e08d0fcc
+        exts: {}
+      - x: 2688
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2752
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2688
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2752
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2816
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2816
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2880
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2880
+        'y': -0.0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2944
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2944
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3008
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3008
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3072
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3072
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3136
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3136
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2688
+        'y': -128
+        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
+        exts: {}
+      - x: 2880
+        'y': -128
+        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
+        exts: {}
+      - x: 3072
+        'y': -128
+        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
+        exts: {}
+      - x: 2752
+        'y': -128
+        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
+        exts: {}
+      - x: 2816
+        'y': -128
+        uid: cd8e435b-2436-4d5d-ac1c-4d9cc1858cb1
+        exts: {}
+      - x: 3008
+        'y': -128
+        uid: cd8e435b-2436-4d5d-ac1c-4d9cc1858cb1
+        exts: {}
+      - x: 3136
+        'y': -128
+        uid: cd8e435b-2436-4d5d-ac1c-4d9cc1858cb1
+        exts: {}
+      - x: 3200
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3200
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3264
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3264
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3200
+        'y': -128
+        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
+        exts: {}
+      - x: 3264
+        'y': -128
+        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
+        exts: {}
+      - x: 2048
+        'y': -128
+        uid: 1dfc97a2-0806-4f6f-a143-feed7fd59a1a
+        exts: {}
+      - x: 2432
+        'y': -128
+        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
+        exts: {}
+      - x: 2496
+        'y': -128
+        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
+        exts: {}
+      - x: 2560
+        'y': -128
+        uid: cd8e435b-2436-4d5d-ac1c-4d9cc1858cb1
+        exts: {}
+      - x: 2560
+        'y': -128
+        uid: 83dc3e9a-6a2e-4eec-9426-e641f2687f82
+        exts: {}
+      - x: 2944
+        'y': -128
+        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
         exts: {}
     tiles:
       - depth: -10
@@ -16306,7 +16587,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627579823356
+    lastmod: 1627600760324
 actions:
   - name: Move
     methods:
@@ -16360,5 +16641,5 @@ settings:
   fps: 30
 fonts: []
 palette: []
-startroom: fc97d371-1554-443a-9ebe-de4b6b9b2678
+startroom: 5b3f253c-db96-4a05-bbbe-9d0d43bfbde2
 styletick: .nan
