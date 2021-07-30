@@ -518,7 +518,7 @@ textures:
       - 1
       - 1
     axis:
-      - 42
+      - 64
       - 32
     marginx: 0
     marginy: 0
@@ -530,21 +530,21 @@ textures:
     offy: 0
     origname: i8c11fe98-db7e-460b-8543-21e5fee4c43a.png
     shape: rect
-    left: 34
-    right: 14
+    left: 50
+    right: 0
     top: 32
     bottom: 32
     uid: 8c11fe98-db7e-460b-8543-21e5fee4c43a
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\escada\escada.png'
-    lastmod: 1627607584605
+    lastmod: 1627677928755
   - name: escadaBaixo
     untill: 0
     grid:
       - 1
       - 1
     axis:
-      - 42
+      - 64
       - 32
     marginx: 0
     marginy: 0
@@ -556,21 +556,21 @@ textures:
     offy: 0
     origname: i5e217aba-ca69-4558-9be9-1bc62d26dd0f.png
     shape: rect
-    left: 34
-    right: 14
+    left: 50
+    right: 0
     top: 32
     bottom: 30
     uid: 5e217aba-ca69-4558-9be9-1bc62d26dd0f
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\escada\escadaBaixo.png'
-    lastmod: 1627607593602
+    lastmod: 1627677940960
   - name: escadaCima
     untill: 0
     grid:
       - 1
       - 1
     axis:
-      - 42
+      - 64
       - 32
     marginx: 0
     marginy: 0
@@ -582,14 +582,14 @@ textures:
     offy: 0
     origname: ie09bef70-1041-4405-a35d-8c5775d29ebe.png
     shape: rect
-    left: 34
-    right: 14
+    left: 50
+    right: 0
     top: 30
     bottom: 32
     uid: e09bef70-1041-4405-a35d-8c5775d29ebe
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\escada\escadaCima.png'
-    lastmod: 1627607602770
+    lastmod: 1627678025106
   - name: grab
     untill: 0
     grid:
@@ -2123,7 +2123,7 @@ types:
     texture: c5126e0c-63ed-4d90-a63d-99a4725aecce
     extends: {}
     uid: 30282da3-7f99-47a5-a17a-8472d66a6487
-    lastmod: 1627608497667
+    lastmod: 1627676092577
   - name: notSolid
     depth: 0
     oncreate: ''
@@ -2553,7 +2553,7 @@ types:
     texture: c5126e0c-63ed-4d90-a63d-99a4725aecce
     extends: {}
     uid: 83dc3e9a-6a2e-4eec-9426-e641f2687f82
-    lastmod: 1627608489349
+    lastmod: 1627675967714
   - name: tumulo1
     depth: -3
     oncreate: ''
@@ -2594,6 +2594,44 @@ types:
     extends: {}
     uid: 94cad546-9e29-41be-b1c2-05087c55c1d1
     lastmod: 1627659305806
+  - name: telefoneGrande
+    depth: 0
+    oncreate: |-
+      this.ctype = "Call";
+      this.y = 0;
+      this.got = false;
+      this.gotn = 0;
+      this.gotf = 0;
+      this.visible = true;
+    onstep: |-
+      if ((this.y != 256) && (this.gotn < 1) && (this.visible != false)){
+          this.y += 2;
+      }   else {
+          this.gotn += 1;
+      }
+
+      if (this.gotn >= 1){
+          if (this.gotn < 100){
+              this.y -= 0.5;
+          } else if (this.gotn < 200){
+              this.y += 0.5;
+          } else {
+              this.gotn = 1;
+          }
+          this.gotn += 1;
+      }
+
+      if ((ct.actions.Jump.down) || (this.gotf > 1000)){
+          this.visible = false;
+      } 
+
+      this.gotf += 1;
+    ondraw: ''
+    ondestroy: ''
+    texture: 8182f36d-a218-4bdf-8881-6976aee4949c
+    extends: {}
+    uid: 954d6930-0e1c-4b90-a432-33c01184e71d
+    lastmod: 1627682560944
 sounds: []
 styles:
   - name: main
@@ -5306,7 +5344,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627659477911
+    lastmod: 1627675761723
   - name: Room_00
     oncreate: >-
       this.text = new PIXI.Text("Press space to continue!!!",
@@ -16256,6 +16294,9 @@ rooms:
       this.another.visible = false;
 
       this.addChild(this.another);
+
+
+      this.gotf = 0;
     onstep: |-
       if (this.text.visible != false){
           if (this.text.x <= 1244){
@@ -16270,7 +16311,6 @@ rooms:
           this.text.y -= 1; 
           } 
           this.number +=1; 
-          console.log(this.number);
       } 
 
       if (this.another.visible != false){
@@ -16286,13 +16326,10 @@ rooms:
               this.another.y -= 1; 
           } 
           this.number +=1 
-          console.log(this.number);
       }
 
-      if (ct.actions.Jump.down){
-          if (this.number === 0){
-              this.text.visible = true;
-          } 
+      if ((ct.actions.Jump.down) && (this.number === 0)){
+          this.text.visible = true; 
       }
 
       if (this.number >= 800){
@@ -16301,6 +16338,12 @@ rooms:
           this.text.visible = false;
           this.another.visible = true; 
       }
+
+      if (this.gotf > 1000){
+          this.number += 1;
+      }
+
+      this.gotf += 1;
     ondraw: ''
     onleave: ''
     width: 800
@@ -18899,6 +18942,10 @@ rooms:
         'y': 64
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
+      - x: 1536
+        'y': 0
+        uid: 954d6930-0e1c-4b90-a432-33c01184e71d
+        exts: {}
     tiles:
       - depth: -10
         tiles:
@@ -18996,7 +19043,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627659493479
+    lastmod: 1627681975738
 actions:
   - name: Move
     methods:
