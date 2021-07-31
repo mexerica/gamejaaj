@@ -907,7 +907,7 @@ textures:
     uid: ec1c728e-6459-453b-ba5f-71daa426e588
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\plataforma\cidadePlatHor.png'
-    lastmod: 1627529036504
+    lastmod: 1627690104520
   - name: cidadePlatEsq
     untill: 0
     grid:
@@ -1666,14 +1666,14 @@ textures:
   - name: telefoneGrande
     untill: 0
     grid:
-      - 1
+      - 4
       - 1
     axis:
       - 128
       - 128
     marginx: 0
     marginy: 0
-    imgWidth: 256
+    imgWidth: 1024
     imgHeight: 256
     width: 256
     height: 256
@@ -1687,8 +1687,8 @@ textures:
     bottom: 112
     uid: 8182f36d-a218-4bdf-8881-6976aee4949c
     padding: 1
-    source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\telefone\telefoneGrande.png'
-    lastmod: 1627654253111
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\telefone\telefoneMotor.png'
+    lastmod: 1627689877792
   - name: tumulo1
     untill: 0
     grid:
@@ -1766,7 +1766,7 @@ textures:
     uid: 94ba6841-27de-4527-8870-683c22c08857
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\plataforma\cavernaInterior.png'
-    lastmod: 1627658054557
+    lastmod: 1627690077056
   - name: desgravida
     untill: 0
     grid:
@@ -2603,6 +2603,9 @@ types:
       this.gotn = 0;
       this.gotf = 0;
       this.visible = true;
+
+      this.animationSpeed = 6/60
+      this.play()
     onstep: |-
       if ((this.y != 256) && (this.gotn < 1) && (this.visible != false)){
           this.y += 2;
@@ -17990,10 +17993,6 @@ rooms:
         'y': -128
         uid: 1dfc97a2-0806-4f6f-a143-feed7fd59a1a
         exts: {}
-      - x: 2432
-        'y': -128
-        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
-        exts: {}
       - x: 2496
         'y': -128
         uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
@@ -18946,6 +18945,10 @@ rooms:
         'y': 0
         uid: 954d6930-0e1c-4b90-a432-33c01184e71d
         exts: {}
+      - x: 2432
+        'y': -128
+        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
+        exts: {}
     tiles:
       - depth: -10
         tiles:
@@ -19065,7 +19068,10 @@ actions:
     methods:
       - code: keyboard.ArrowDown
       - code: keyboard.KeyS
-emitterTandems: []
+emitterTandems:
+  - name: Tandem_ab7d151c9529
+    origname: ptab7d151c9529
+    emitters: []
 scripts: []
 starting: 0
 settings:
