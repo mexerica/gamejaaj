@@ -907,7 +907,7 @@ textures:
     uid: ec1c728e-6459-453b-ba5f-71daa426e588
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\plataforma\cidadePlatHor.png'
-    lastmod: 1627690104520
+    lastmod: 1627529036504
   - name: cidadePlatEsq
     untill: 0
     grid:
@@ -1666,14 +1666,14 @@ textures:
   - name: telefoneGrande
     untill: 0
     grid:
-      - 4
+      - 1
       - 1
     axis:
       - 128
       - 128
     marginx: 0
     marginy: 0
-    imgWidth: 1024
+    imgWidth: 256
     imgHeight: 256
     width: 256
     height: 256
@@ -1687,8 +1687,8 @@ textures:
     bottom: 112
     uid: 8182f36d-a218-4bdf-8881-6976aee4949c
     padding: 1
-    source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\telefone\telefoneMotor.png'
-    lastmod: 1627689877792
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\telefone\telefoneGrande.png'
+    lastmod: 1627654253111
   - name: tumulo1
     untill: 0
     grid:
@@ -1766,7 +1766,7 @@ textures:
     uid: 94ba6841-27de-4527-8870-683c22c08857
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\plataforma\cavernaInterior.png'
-    lastmod: 1627690077056
+    lastmod: 1627658054557
   - name: desgravida
     untill: 0
     grid:
@@ -1995,7 +1995,7 @@ types:
     extends:
       visible: true
     uid: ef759957-aca5-4180-8ef6-9732f7ba4d34
-    lastmod: 1627608167857
+    lastmod: 1627754928340
   - name: escadaCima
     depth: -1
     oncreate: this.ctype = 'Grab';
@@ -2533,27 +2533,57 @@ types:
     oncreate: |-
       this.scale.x = -1
       this.animationSpeed = 4/60;
-      this.play()
-    onstep: this.move();
+      this.play();
+      this.visible = false;
+      this.number = 0; 
+    onstep: |
+      this.move();
+      if ((ct.actions.Jump.down) && (this.number > 600)){
+          this.visible = true;
+          this.number = - 800;
+      }
+
+      if (this.visible = true && (this.number === - 400)){
+          this.visible = false;
+      }
+
+      if (this.number != 0){
+          this.number += 1;
+      }
     ondraw: ''
     ondestroy: ''
     texture: 84408621-a294-4147-a112-3533b6e1f4a5
     extends: {}
     uid: 1dfc97a2-0806-4f6f-a143-feed7fd59a1a
-    lastmod: 1627607947937
+    lastmod: 1627754918737
   - name: eslarme
     depth: -3
-    oncreate: |-
+    oncreate: |
       this.scale.x = -1
       this.animationSpeed = 5/60;
-      this.play()
-    onstep: this.move();
+      this.play();
+      this.visible = false;
+      this.number = 1; 
+    onstep: |
+      this.move();
+      if ((ct.actions.Jump.down) && (this.number > 600)){
+          this.visible = true;
+          this.number = - 800;
+      }
+
+      if (this.visible = true && (this.number === - 400)){
+          this.visible = false;
+      }
+
+      if (this.number != 0){
+          this.number += 1;
+      }
     ondraw: ''
     ondestroy: ''
     texture: c5126e0c-63ed-4d90-a63d-99a4725aecce
     extends: {}
     uid: 83dc3e9a-6a2e-4eec-9426-e641f2687f82
-    lastmod: 1627675967714
+    lastmod: 1627754858540
   - name: tumulo1
     depth: -3
     oncreate: ''
@@ -2603,9 +2633,6 @@ types:
       this.gotn = 0;
       this.gotf = 0;
       this.visible = true;
-
-      this.animationSpeed = 6/60
-      this.play()
     onstep: |-
       if ((this.y != 256) && (this.gotn < 1) && (this.visible != false)){
           this.y += 2;
@@ -2624,9 +2651,19 @@ types:
           this.gotn += 1;
       }
 
-      if ((ct.actions.Jump.down) || (this.gotf > 1000)){
-          this.visible = false;
+      if (ct.actions.Jump.down){
+          if ((this.gotn >= 1) && (this.gotf < 500) && (this.gotf > 128)){
+              this.x = 2240;
+              this.y = - 256;
+          } else if ((this.gotn >= 1) && (this.gotf > 600)){
+              this.visible = false;
+          }
       } 
+
+      if ((this.gotf === 500)){
+          this.x = 2240;
+          this.y = - 256;
+      }
 
       this.gotf += 1;
     ondraw: ''
@@ -2634,7 +2671,7 @@ types:
     texture: 8182f36d-a218-4bdf-8881-6976aee4949c
     extends: {}
     uid: 954d6930-0e1c-4b90-a432-33c01184e71d
-    lastmod: 1627682560944
+    lastmod: 1627754847743
 sounds: []
 styles:
   - name: main
@@ -16276,6 +16313,9 @@ rooms:
 
       this.another = new PIXI.Text("Teste", ct.styles.get("not_main"));
 
+      this.onemore = new PIXI.Text("Você se lembra? ",
+      ct.styles.get("not_main"));
+
 
       this.text.x = 1280;
 
@@ -16292,59 +16332,92 @@ rooms:
 
       this.another.y = this.text.y;
 
-      this.number = 0;
-
       this.another.visible = false;
 
       this.addChild(this.another);
 
 
+      this.onemore.x = 2240;
+
+      this.onemore.y = -256;
+
+      this.onemore.visible = false;
+
+      this.addChild(this.onemore);
+
+
       this.gotf = 0;
-    onstep: |-
-      if (this.text.visible != false){
-          if (this.text.x <= 1244){
-              this.text.x = 1280;
-          } else {
-              this.text.x -= 0.25; 
+    onstep: >-
+      if ((this.text.visible != false) || (this.another.visible != false) ||
+      (this.onemore.visible != false)) {
+          if ((this.text.visible != false)){
+              if (this.text.x <= 1244){
+                  this.text.x = 1280;
+              } else {
+                  this.text.x -= 0.25; 
+              }
+
+              if (this.text.y <= 220){
+                  this.text.y = 256;
+              } else {
+                  this.text.y -= 1; 
+              } 
           }
 
-          if (this.text.y <= 220){
-              this.text.y = 256;
-          } else {
-          this.text.y -= 1; 
-          } 
+          if ((this.another.visible != false)){
+              if (this.another.x <= 1244){
+                  this.another.x = 1280;
+              } else {
+                  this.another.x -= 0.25; 
+              }
+
+              if (this.another.y <= 220){
+                  this.another.y = 256;
+              } else {
+                  this.another.y -= 1; 
+              } 
+          }
+
+          if ((this.onemore.visible != false)){
+              if (this.onemore.x <= 2204){
+                  this.onemore.x = 2240;
+              } else {
+              this.onemore.x -= 0.25; 
+              }
+
+              if (this.onemore.y <= -194){
+                  this.onemore.y = -256;
+              } else {
+              this.onemore.y -= 1; 
+              } 
+          }
           this.number +=1; 
       } 
 
-      if (this.another.visible != false){
-          if (this.another.x <= 1244){
-              this.another.x = 1280;
-          } else {
-              this.another.x -= 0.25; 
+
+      if ((ct.actions.Jump.down)){ 
+          if ((this.number === 0) && (this.gotf >= 128) && (this.gotf <= 500)){
+              this.text.visible = true; 
+          } else if ((this.number >= 800) || (this.gotf >= 650)){
+              this.onemore.visible = true;
           }
-
-          if (this.another.y <= 220){
-              this.another.y = 256;
-          } else {
-              this.another.y -= 1; 
-          } 
-          this.number +=1 
       }
 
-      if ((ct.actions.Jump.down) && (this.number === 0)){
-          this.text.visible = true; 
-      }
 
-      if (this.number >= 800){
+      if (this.number >= 1200){
+          this.onemore.visible = false;
+      } else if (this.number >= 800){
           this.another.visible = false;
       } else if (this.number >= 400){
           this.text.visible = false;
           this.another.visible = true; 
       }
 
-      if (this.gotf > 1000){
+
+      if (this.gotf > 500){
           this.number += 1;
       }
+
 
       this.gotf += 1;
     ondraw: ''
@@ -17785,14 +17858,6 @@ rooms:
         'y': -128
         uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
         exts: {}
-      - x: 2048
-        'y': -128
-        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
-        exts: {}
-      - x: 2112
-        'y': -128
-        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
-        exts: {}
       - x: 2176
         'y': -128
         uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
@@ -17989,17 +18054,13 @@ rooms:
         'y': -64
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
-      - x: 2048
+      - x: 2432
         'y': -128
-        uid: 1dfc97a2-0806-4f6f-a143-feed7fd59a1a
+        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
         exts: {}
       - x: 2496
         'y': -128
         uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
-        exts: {}
-      - x: 2560
-        'y': -128
-        uid: 83dc3e9a-6a2e-4eec-9426-e641f2687f82
         exts: {}
       - x: 1792
         'y': 64
@@ -18154,14 +18215,6 @@ rooms:
         uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
         exts: {}
       - x: 2944
-        'y': -128
-        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
-        exts: {}
-      - x: 2880
-        'y': -128
-        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
-        exts: {}
-      - x: 2816
         'y': -128
         uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
         exts: {}
@@ -18945,9 +18998,337 @@ rooms:
         'y': 0
         uid: 954d6930-0e1c-4b90-a432-33c01184e71d
         exts: {}
+      - x: 1856
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1920
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1984
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2112
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2176
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2240
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2304
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2368
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
       - x: 2432
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2496
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2624
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2688
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2752
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2944
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3008
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3072
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3136
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3200
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3264
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2560
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2816
+        'y': -128
+        uid: cd8e435b-2436-4d5d-ac1c-4d9cc1858cb1
+        exts: {}
+      - x: 2880
         'y': -128
         uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
+        exts: {}
+      - x: 2816
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2880
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1856
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1920
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1920
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1984
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1984
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2048
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2048
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2112
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2112
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2176
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2176
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2240
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2240
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2240
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2304
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2304
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2368
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2432
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2368
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2432
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2496
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2496
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1856
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2048
+        'y': -128
+        uid: 2dd039e1-6bfe-4e6b-b56d-268f297f818e
+        exts: {}
+      - x: 2112
+        'y': -128
+        uid: 4d2b2a4b-ad8f-49fe-8dac-0e859af031ac
+        exts: {}
+      - x: 2048
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2560
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2624
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2688
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2688
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2624
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2624
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2624
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2560
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2752
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2816
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2752
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2816
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2816
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2368
+        'y': -128
+        uid: 1dfc97a2-0806-4f6f-a143-feed7fd59a1a
+        exts: {}
+      - x: 2432
+        'y': -128
+        uid: 83dc3e9a-6a2e-4eec-9426-e641f2687f82
+        exts: {}
+      - x: 2880
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2880
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2944
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2944
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3008
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3008
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3072
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3072
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3136
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3136
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3264
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3200
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3200
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3264
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1792
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1792
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1792
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1792
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
     tiles:
       - depth: -10
@@ -19046,7 +19427,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627681975738
+    lastmod: 1627751761933
 actions:
   - name: Move
     methods:
@@ -19068,10 +19449,7 @@ actions:
     methods:
       - code: keyboard.ArrowDown
       - code: keyboard.KeyS
-emitterTandems:
-  - name: Tandem_ab7d151c9529
-    origname: ptab7d151c9529
-    emitters: []
+emitterTandems: []
 scripts: []
 starting: 0
 settings:
