@@ -2091,7 +2091,7 @@ types:
           else if (this.scale.x < 0) {
               this.scale.x += 0.00025
           }
-          else {
+          if (this.scale.y < 0.05) {
               ct.rooms.switch('Room_03')
           }
              
@@ -2124,7 +2124,7 @@ types:
     texture: c5126e0c-63ed-4d90-a63d-99a4725aecce
     extends: {}
     uid: 30282da3-7f99-47a5-a17a-8472d66a6487
-    lastmod: 1627778595894
+    lastmod: 1627840888615
   - name: notSolid
     depth: 0
     oncreate: |-
@@ -2673,7 +2673,7 @@ types:
     depth: 0
     oncreate: |-
       this.ctype = "Call";
-      this.gotn = 100;
+      this.gotn = 130;
       this.visible = true;
     onstep: |+
       if (this.gotn < 100){
@@ -2697,7 +2697,7 @@ types:
     texture: 8182f36d-a218-4bdf-8881-6976aee4949c
     extends: {}
     uid: 10872850-27ce-47c5-917a-9eeb6094af81
-    lastmod: 1627838452121
+    lastmod: 1627839987928
   - name: escada_Fake
     depth: -1
     oncreate: ''
