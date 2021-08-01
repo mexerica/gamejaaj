@@ -1793,6 +1793,33 @@ textures:
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\mulher\desgravida.png'
     lastmod: 1627659408680
+  - name: tituloMotor
+    untill: 0
+    grid:
+      - 5
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 4800
+    imgHeight: 600
+    width: 800
+    height: 600
+    offx: 0
+    offy: 0
+    origname: id9793358-fff9-4f04-94b3-9c03bb8201b1.png
+    shape: rect
+    left: 0
+    right: 800
+    top: 0
+    bottom: 600
+    uid: d9793358-fff9-4f04-94b3-9c03bb8201b1
+    padding: 1
+    source: 'E:\Trabalhos\Jogos\gamejaaj\img\tituloMotor.png'
+    tiled: false
+    lastmod: 1627847237261
 skeletons: []
 types:
   - name: character
@@ -2697,7 +2724,7 @@ types:
     texture: 8182f36d-a218-4bdf-8881-6976aee4949c
     extends: {}
     uid: 10872850-27ce-47c5-917a-9eeb6094af81
-    lastmod: 1627839987928
+    lastmod: 1627846567659
   - name: escada_Fake
     depth: -1
     oncreate: ''
@@ -2729,6 +2756,18 @@ types:
     extends: {}
     uid: d46574b4-09a0-4221-beae-649f7dc956d9
     lastmod: 1627837362610
+  - name: tituloMotor
+    depth: -5
+    oncreate: |-
+      this.animationSpeed = 2/60
+      this.play()
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: d9793358-fff9-4f04-94b3-9c03bb8201b1
+    extends: {}
+    uid: 80cf9225-3ea2-40f0-bba6-8c06b5fc09a6
+    lastmod: 1627846762212
 sounds: []
 styles:
   - name: main
@@ -5443,15 +5482,7 @@ rooms:
     gridY: 64
     lastmod: 1627838633144
   - name: Room_00
-    oncreate: >-
-      this.text = new PIXI.Text("Press space to continue!!!",
-      ct.styles.get("main"));
-
-      this.text.x = 10;
-
-      this.text.y = 10;
-
-      this.addChild(this.text);
+    oncreate: ''
     onstep: |-
       if (ct.actions.Launch.down){
           ct.rooms.switch('Room_04');
@@ -5460,11 +5491,12 @@ rooms:
     onleave: ''
     width: 800
     height: 600
-    backgrounds:
-      - depth: 0
-        texture: 4e3d8c23-27b2-49f5-a41c-169478585f79
-        extends: {}
-    copies: []
+    backgrounds: []
+    copies:
+      - x: 0
+        'y': 0
+        uid: 80cf9225-3ea2-40f0-bba6-8c06b5fc09a6
+        exts: {}
     tiles:
       - depth: -10
         tiles: []
@@ -5474,7 +5506,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627769208512
+    lastmod: 1627846838741
   - name: Room_03
     oncreate: this.time = 0;
     onstep: |-
@@ -26581,7 +26613,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627837913216
+    lastmod: 1627843764901
   - name: Room_06
     oncreate: >-
       this.text = new PIXI.Text("Se é isso que você quer, então vá. Más
