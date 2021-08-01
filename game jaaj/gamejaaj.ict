@@ -907,7 +907,7 @@ textures:
     uid: ec1c728e-6459-453b-ba5f-71daa426e588
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\plataforma\cidadePlatHor.png'
-    lastmod: 1627529036504
+    lastmod: 1627838978582
   - name: cidadePlatEsq
     untill: 0
     grid:
@@ -1747,14 +1747,14 @@ textures:
       - 1
       - 1
     axis:
-      - 2
+      - 1
       - 0
     marginx: 0
     marginy: 0
-    imgWidth: 68
-    imgHeight: 68
-    width: 68
-    height: 68
+    imgWidth: 65
+    imgHeight: 65
+    width: 65
+    height: 65
     offx: 0
     offy: 0
     origname: i94ba6841-27de-4527-8870-683c22c08857.png
@@ -1766,7 +1766,7 @@ textures:
     uid: 94ba6841-27de-4527-8870-683c22c08857
     padding: 1
     source: 'E:\Trabalhos\Jogos\gamejaaj\img\cidade\plataforma\cavernaInterior.png'
-    lastmod: 1627658054557
+    lastmod: 1627838623794
   - name: desgravida
     untill: 0
     grid:
@@ -2555,7 +2555,7 @@ types:
     texture: 84408621-a294-4147-a112-3533b6e1f4a5
     extends: {}
     uid: 1dfc97a2-0806-4f6f-a143-feed7fd59a1a
-    lastmod: 1627776266807
+    lastmod: 1627838328777
   - name: eslarme
     depth: -3
     oncreate: |
@@ -2579,7 +2579,7 @@ types:
     texture: c5126e0c-63ed-4d90-a63d-99a4725aecce
     extends: {}
     uid: 83dc3e9a-6a2e-4eec-9426-e641f2687f82
-    lastmod: 1627778398636
+    lastmod: 1627838259327
   - name: tumulo1
     depth: -3
     oncreate: ''
@@ -2609,7 +2609,7 @@ types:
     texture: 94ba6841-27de-4527-8870-683c22c08857
     extends: {}
     uid: 70d4a812-909f-4059-bab5-435c2882e828
-    lastmod: 1627776270592
+    lastmod: 1627839069613
   - name: desgravida
     depth: -5
     oncreate: this.visible = false;
@@ -2673,8 +2673,7 @@ types:
     depth: 0
     oncreate: |-
       this.ctype = "Call";
-      this.y = 0;
-      this.gotn = 0;
+      this.gotn = 100;
       this.visible = true;
     onstep: |+
       if (this.gotn < 100){
@@ -2698,7 +2697,38 @@ types:
     texture: 8182f36d-a218-4bdf-8881-6976aee4949c
     extends: {}
     uid: 10872850-27ce-47c5-917a-9eeb6094af81
-    lastmod: 1627776513198
+    lastmod: 1627838452121
+  - name: escada_Fake
+    depth: -1
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 8c11fe98-db7e-460b-8543-21e5fee4c43a
+    extends: {}
+    uid: a9085c62-6265-43d3-9954-e1572e2d1010
+    lastmod: 1627837367048
+  - name: escadaBaixo_Fake
+    depth: -1
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 5e217aba-ca69-4558-9be9-1bc62d26dd0f
+    extends:
+      visible: true
+    uid: cbdb7723-9d52-475b-88da-6b5632785ac7
+    lastmod: 1627837372576
+  - name: escadaCima_Fake
+    depth: -1
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: e09bef70-1041-4405-a35d-8c5775d29ebe
+    extends: {}
+    uid: d46574b4-09a0-4221-beae-649f7dc956d9
+    lastmod: 1627837362610
 sounds: []
 styles:
   - name: main
@@ -5411,7 +5441,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627777667669
+    lastmod: 1627838633144
   - name: Room_00
     oncreate: >-
       this.text = new PIXI.Text("Press space to continue!!!",
@@ -10302,18 +10332,6 @@ rooms:
         'y': 1152
         uid: 94d237c5-bcab-46ba-ae05-a9fc1ad31d8e
         exts: {}
-      - x: 1792
-        'y': 384
-        uid: ef759957-aca5-4180-8ef6-9732f7ba4d34
-        exts: {}
-      - x: 1792
-        'y': 64
-        uid: 737d2aa7-50f2-4e6f-ba1a-e4efad36022b
-        exts: {}
-      - x: 1792
-        'y': 0
-        uid: 737d2aa7-50f2-4e6f-ba1a-e4efad36022b
-        exts: {}
       - x: -1152
         'y': 768
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
@@ -10613,22 +10631,6 @@ rooms:
       - x: 2176
         'y': 128
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1792
-        'y': 128
-        uid: 737d2aa7-50f2-4e6f-ba1a-e4efad36022b
-        exts: {}
-      - x: 1792
-        'y': 192
-        uid: 737d2aa7-50f2-4e6f-ba1a-e4efad36022b
-        exts: {}
-      - x: 1792
-        'y': 256
-        uid: 737d2aa7-50f2-4e6f-ba1a-e4efad36022b
-        exts: {}
-      - x: 1792
-        'y': 320
-        uid: 737d2aa7-50f2-4e6f-ba1a-e4efad36022b
         exts: {}
       - x: 2624
         'y': 192
@@ -16311,6 +16313,42 @@ rooms:
         'y': 1664
         uid: c6add340-9d7a-4d21-9322-41d4cb15b72f
         exts: {}
+      - x: 1792
+        'y': 384
+        uid: cbdb7723-9d52-475b-88da-6b5632785ac7
+        exts: {}
+      - x: 1792
+        'y': 320
+        uid: a9085c62-6265-43d3-9954-e1572e2d1010
+        exts: {}
+      - x: 1792
+        'y': 256
+        uid: a9085c62-6265-43d3-9954-e1572e2d1010
+        exts: {}
+      - x: 1792
+        'y': 192
+        uid: a9085c62-6265-43d3-9954-e1572e2d1010
+        exts: {}
+      - x: 1792
+        'y': 128
+        uid: a9085c62-6265-43d3-9954-e1572e2d1010
+        exts: {}
+      - x: 1792
+        'y': 64
+        uid: a9085c62-6265-43d3-9954-e1572e2d1010
+        exts: {}
+      - x: 1792
+        'y': -0.0
+        uid: a9085c62-6265-43d3-9954-e1572e2d1010
+        exts: {}
+      - x: 1792
+        'y': -64
+        uid: a9085c62-6265-43d3-9954-e1572e2d1010
+        exts: {}
+      - x: 1792
+        'y': -128
+        uid: d46574b4-09a0-4221-beae-649f7dc956d9
+        exts: {}
     tiles:
       - depth: -10
         tiles: []
@@ -16320,7 +16358,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627774091077
+    lastmod: 1627837394607
   - name: Room_04
     oncreate: >-
       this.text = new PIXI.Text("Eai cara, ainda não acredito que você quis
@@ -16487,66 +16525,6 @@ rooms:
         exts: {}
       - x: 1984
         'y': 256
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 1984
-        'y': 192
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 1984
-        'y': 192
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 1984
-        'y': 128
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2048
-        'y': 192
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2048
-        'y': 128
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2048
-        'y': 64
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2112
-        'y': 64
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2112
-        'y': 0
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2112
-        'y': 0
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2112
-        'y': 0
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2112
-        'y': -64
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2176
-        'y': 0
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2176
-        'y': 0
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2176
-        'y': -64
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2240
-        'y': -64
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
       - x: 2624
@@ -18125,70 +18103,6 @@ rooms:
         'y': -64
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
-      - x: 1856
-        'y': -64
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1920
-        'y': -64
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 2048
-        'y': -64
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1984
-        'y': -64
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1984
-        'y': 0
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 2048
-        'y': 0
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1984
-        'y': 64
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1920
-        'y': 0
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1856
-        'y': 0
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1856
-        'y': 64
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1920
-        'y': 64
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1920
-        'y': 128
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1856
-        'y': 128
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1856
-        'y': 192
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1920
-        'y': 192
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 2112
-        'y': 128
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
       - x: 2176
         'y': 128
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
@@ -19065,14 +18979,6 @@ rooms:
         'y': -192
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
-      - x: 3200
-        'y': -192
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3264
-        'y': -192
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 2560
         'y': -192
         uid: 70d4a812-909f-4059-bab5-435c2882e828
@@ -19177,14 +19083,6 @@ rooms:
         'y': -256
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
-      - x: 2688
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2624
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 2624
         'y': -320
         uid: 70d4a812-909f-4059-bab5-435c2882e828
@@ -19257,32 +19155,12 @@ rooms:
         'y': -256
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
-      - x: 3264
-        'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3200
-        'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3200
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3264
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 1792
         'y': -192
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 1792
         'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1792
-        'y': -320
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 2496
@@ -19313,19 +19191,7 @@ rooms:
         'y': -448
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
-      - x: 2112
-        'y': -448
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
       - x: 2048
-        'y': -448
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2176
-        'y': -448
-        uid: 257341b5-ec8e-403c-b758-bea9118fefd6
-        exts: {}
-      - x: 2240
         'y': -448
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
@@ -19365,32 +19231,12 @@ rooms:
         'y': -448
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
-      - x: 1792
-        'y': -448
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1728
-        'y': -448
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1792
-        'y': -512
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
       - x: 1920
         'y': -512
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
       - x: 1856
         'y': -512
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1856
-        'y': -576
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1920
-        'y': -576
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
       - x: 1984
@@ -19416,29 +19262,9 @@ rooms:
       - x: 2112
         'y': -512
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1856
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1792
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1920
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2048
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 1984
         'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1984
-        'y': -384
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 2112
@@ -19481,64 +19307,8 @@ rooms:
         'y': -320
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
-      - x: 2432
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2304
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2176
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2112
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2624
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2496
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 2240
         'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2624
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2560
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2368
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2240
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2752
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2752
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2688
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2816
-        'y': -384
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 2176
@@ -19556,26 +19326,6 @@ rooms:
       - x: 2240
         'y': -576
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 2880
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2944
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3008
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3072
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3136
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 2880
         'y': -448
@@ -19604,6 +19354,346 @@ rooms:
       - x: 1152
         'y': 320
         uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: 2112
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1856
+        'y': 192
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1856
+        'y': 128
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1856
+        'y': 64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1856
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1856
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1984
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1920
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1920
+        'y': 64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1984
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1920
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1984
+        'y': 64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1920
+        'y': 128
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1984
+        'y': 128
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1920
+        'y': 192
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1984
+        'y': 192
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2048
+        'y': 192
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2048
+        'y': 128
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2112
+        'y': 128
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2112
+        'y': 64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2048
+        'y': 64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2048
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2112
+        'y': 0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -0.0
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2048
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2112
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -64
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1792
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1792
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2688
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1856
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1920
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1984
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2048
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2112
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2176
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2240
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2304
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2368
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2432
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2496
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2560
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2624
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2688
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2752
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2752
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2816
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2880
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2944
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3008
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3072
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3136
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3200
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3200
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3264
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1792
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 1920
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2048
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2112
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2560
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2624
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2688
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2752
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2816
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2880
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2944
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3008
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3072
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
     tiles:
       - depth: -10
@@ -19702,7 +19792,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627781411241
+    lastmod: 1627837640552
   - name: Room_05
     oncreate: >-
       this.text = new PIXI.Text("Se você lembra, por que está tentando voltar?
@@ -22292,23 +22382,7 @@ rooms:
         'y': -192
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
-      - x: 1920
-        'y': -192
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1984
-        'y': -192
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 2112
-        'y': -192
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2176
-        'y': -192
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2240
         'y': -192
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
@@ -22365,10 +22439,6 @@ rooms:
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 1856
-        'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1920
         'y': -256
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
@@ -22500,20 +22570,8 @@ rooms:
         'y': -256
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
-      - x: 3264
-        'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 3200
         'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3200
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3264
-        'y': -320
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 1792
@@ -22600,24 +22658,12 @@ rooms:
         'y': -448
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
-      - x: 1728
-        'y': -448
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1792
-        'y': -512
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
       - x: 1920
         'y': -512
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
       - x: 1856
         'y': -512
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1856
-        'y': -576
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
       - x: 1920
@@ -22655,18 +22701,6 @@ rooms:
       - x: 2368
         'y': -128
         uid: cd8e435b-2436-4d5d-ac1c-4d9cc1858cb1
-        exts: {}
-      - x: 1920
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1920
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1984
-        'y': -384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 2048
         'y': -384
@@ -22809,10 +22843,6 @@ rooms:
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 1984
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1984
         'y': -512
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
@@ -22820,17 +22850,9 @@ rooms:
         'y': -512
         uid: 257341b5-ec8e-403c-b758-bea9118fefd6
         exts: {}
-      - x: 1984
-        'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 2048
         'y': -256
         uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 1984
-        'y': -256
-        uid: 10872850-27ce-47c5-917a-9eeb6094af81
         exts: {}
       - x: 2496
         'y': -192
@@ -22863,6 +22885,206 @@ rooms:
       - x: 1152
         'y': 320
         uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
+        exts: {}
+      - x: 2048
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2112
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2880
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2944
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2560
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2624
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2688
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2752
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2816
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2880
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2944
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3008
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3008
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3072
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3072
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3136
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2880
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2944
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3008
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3072
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3136
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2176
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2240
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1920
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1984
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1984
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1920
+        'y': -320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1920
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1984
+        'y': -256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1984
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 1920
+        'y': -192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2048
+        'y': -256
+        uid: 10872850-27ce-47c5-917a-9eeb6094af81
         exts: {}
     tiles:
       - depth: -10
@@ -22961,7 +23183,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627781421515
+    lastmod: 1627839235679
   - name: Room_03_2
     oncreate: this.time = 0;
     onstep: |-
@@ -22988,7 +23210,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627781330514
+    lastmod: 1627837921400
   - name: Room_07
     oncreate: >-
       this.text = new PIXI.Text("Se é isso que você quer, então não podenos
@@ -25690,20 +25912,8 @@ rooms:
         'y': -256
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
-      - x: 3264
-        'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 3200
         'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3200
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3264
-        'y': -320
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 1792
@@ -25790,24 +26000,12 @@ rooms:
         'y': -448
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
-      - x: 1728
-        'y': -448
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1792
-        'y': -512
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
       - x: 1920
         'y': -512
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
       - x: 1856
         'y': -512
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1856
-        'y': -576
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
       - x: 1920
@@ -26154,6 +26352,138 @@ rooms:
         'y': 320
         uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
         exts: {}
+      - x: 2048
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2112
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2560
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2624
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2688
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2752
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2816
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2880
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2944
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3072
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3008
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3136
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3072
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3136
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 3072
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
     tiles:
       - depth: -10
         tiles:
@@ -26251,7 +26581,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627780871084
+    lastmod: 1627837913216
   - name: Room_06
     oncreate: >-
       this.text = new PIXI.Text("Se é isso que você quer, então vá. Más
@@ -29028,20 +29358,8 @@ rooms:
         'y': -256
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
-      - x: 3264
-        'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 3200
         'y': -256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3200
-        'y': -320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 3264
-        'y': -320
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 1792
@@ -29128,24 +29446,12 @@ rooms:
         'y': -448
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
-      - x: 1728
-        'y': -448
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1792
-        'y': -512
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
       - x: 1920
         'y': -512
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
       - x: 1856
         'y': -512
-        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
-        exts: {}
-      - x: 1856
-        'y': -576
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
       - x: 1920
@@ -29452,6 +29758,130 @@ rooms:
         'y': 320
         uid: 58c247a4-d9a1-481b-8444-4b2caf355dfa
         exts: {}
+      - x: 2048
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2112
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2176
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2240
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2496
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2432
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2368
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -640
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -576
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2304
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2560
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2624
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2688
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2752
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2816
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2880
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 2944
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3008
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3072
+        'y': -512
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3136
+        'y': -448
+        uid: e49cde7b-479b-4a29-8fec-e51ac565e461
+        exts: {}
+      - x: 3136
+        'y': -384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
     tiles:
       - depth: -10
         tiles:
@@ -29549,7 +29979,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627781429345
+    lastmod: 1627837778679
 actions:
   - name: Move
     methods:
@@ -29597,7 +30027,7 @@ settings:
     functionWrap: false
     codeModifier: none
   branding:
-    icon: -1
+    icon: 84408621-a294-4147-a112-3533b6e1f4a5
     accent: '#446adb'
     invertPreloaderScheme: true
   fps: 30
