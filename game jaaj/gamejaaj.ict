@@ -26694,7 +26694,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627856221777
+    lastmod: 1627857971498
   - name: Room_06
     oncreate: >
       this.text = new PIXI.Text("Se é isso que você quer, então vá. Más
@@ -30151,5 +30151,5 @@ settings:
   fps: 30
 fonts: []
 palette: []
-startroom: a47f2ca8-ba79-47c6-9ca9-1b3ce745f4ba
+startroom: cb4ffe34-0699-409e-a94f-894bec5c8b95
 styletick: .nan
