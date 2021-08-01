@@ -2768,7 +2768,43 @@ types:
     extends: {}
     uid: 80cf9225-3ea2-40f0-bba6-8c06b5fc09a6
     lastmod: 1627846762212
-sounds: []
+sounds:
+  - name: hell
+    uid: 60936f82-409a-4d08-9225-5007887ae3fa
+    isMusic: true
+    origname: s60936f82-409a-4d08-9225-5007887ae3fa.mp3
+    lastmod: 1627850162403
+    poolSize: 1
+  - name: Personality
+    uid: 1b3c5932-043c-4fe5-8a12-b1127307415c
+    origname: s1b3c5932-043c-4fe5-8a12-b1127307415c.mp3
+    lastmod: 1627849558976
+    isMusic: true
+  - name: Personality_3
+    uid: 5b79a9b0-4a36-48df-86b7-b0cae1e62058
+    origname: s5b79a9b0-4a36-48df-86b7-b0cae1e62058.mp3
+    lastmod: 1627849789961
+    isMusic: true
+  - name: Personality_1
+    uid: 0976aa87-fd9a-4e59-90b8-142c6962bdf3
+    origname: s0976aa87-fd9a-4e59-90b8-142c6962bdf3.mp3
+    lastmod: 1627849843158
+    isMusic: true
+  - name: dramatic
+    uid: 062fe1fb-0f37-4b16-888f-810f94f38ffb
+    origname: s062fe1fb-0f37-4b16-888f-810f94f38ffb.mp3
+    lastmod: 1627850000506
+    isMusic: true
+  - name: odisseia
+    uid: 3bc661c9-4952-4b95-a964-ff00cf08042e
+    origname: s3bc661c9-4952-4b95-a964-ff00cf08042e.mp3
+    lastmod: 1627851511436
+    isMusic: true
+  - name: odisseia_1
+    uid: c45c7fa5-8fe3-4925-aef3-68d6999bb2e7
+    origname: sc45c7fa5-8fe3-4925-aef3-68d6999bb2e7.mp3
+    lastmod: 1627851769093
+    isMusic: true
 styles:
   - name: main
     uid: 13b10fff-0090-4cd7-98cb-4c79552533bc
@@ -2804,7 +2840,7 @@ styles:
       blur: 0
 rooms:
   - name: Room_01
-    oncreate: >-
+    oncreate: >
       this.text = new PIXI.Text("Não consigo encotrar meu colar! É a unica
       lembrança que eu tenho do meu marido!", ct.styles.get("not_main"));
 
@@ -2815,6 +2851,9 @@ rooms:
       this.thing = 0;
 
       this.addChild(this.text);
+
+
+      ct.sound.spawn('Personality_1', { loop: true })
     onstep: |+
       if (this.text.x <= 2972){
           this.text.x = 3008;
@@ -2834,7 +2873,7 @@ rooms:
 
 
     ondraw: ''
-    onleave: ''
+    onleave: ct.sound.stop('Personality_1')
     width: 800
     height: 600
     backgrounds:
@@ -5480,15 +5519,19 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627838633144
+    lastmod: 1627850418915
   - name: Room_00
     oncreate: ''
     onstep: |-
+      if (ct.actions.Move)
+          if (!ct.sound.playing('odisseia_1'))
+              ct.sound.spawn('odisseia_1', { loop: true } )
+
       if (ct.actions.Launch.down){
           ct.rooms.switch('Room_04');
       }
     ondraw: ''
-    onleave: ''
+    onleave: ct.sound.stop('odisseia_1')
     width: 800
     height: 600
     backgrounds: []
@@ -5506,9 +5549,12 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627846838741
+    lastmod: 1627851788450
   - name: Room_03
-    oncreate: this.time = 0;
+    oncreate: |
+      this.time = 0;
+
+      ct.sound.spawn('hell')
     onstep: |-
       this.time += 0.005;
 
@@ -5516,7 +5562,7 @@ rooms:
           ct.rooms.switch('Room_01');
       }
     ondraw: ''
-    onleave: ''
+    onleave: ct.sound.stop('hell')
     width: 800
     height: 600
     backgrounds:
@@ -5533,9 +5579,9 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627781300553
+    lastmod: 1627851586185
   - name: Room_02
-    oncreate: >-
+    oncreate: >
       this.text = new PIXI.Text("Não acredito que derrubei meus brinquedos no
       lixo!", ct.styles.get("not_main"));
 
@@ -5544,6 +5590,9 @@ rooms:
       this.text.y = 256;
 
       this.addChild(this.text);
+
+
+      ct.sound.spawn('Personality', { loop: true })
     onstep: |
       if (this.text.x <= 2972){
           this.text.x = 3008;
@@ -5557,7 +5606,8 @@ rooms:
          this.text.y -= 1; 
       }
     ondraw: ''
-    onleave: ''
+    onleave: |
+      ct.sound.stop('Personality')
     width: 800
     height: 600
     backgrounds:
@@ -16390,9 +16440,9 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627837394607
+    lastmod: 1627850430164
   - name: Room_04
-    oncreate: >-
+    oncreate: >
       this.text = new PIXI.Text("Eai cara, ainda não acredito que você quis
       passar suas férias no meio do nada!", ct.styles.get("not_main"));
 
@@ -16432,7 +16482,10 @@ rooms:
       this.addChild(this.onemore);
 
 
-      this.gotf = 0;
+      this.gotf = 0
+
+
+      ct.sound.spawn('dramatic', { loop: true })
     onstep: >-
       if ((this.text.visible != false) || (this.another.visible != false) ||
       (this.onemore.visible != false)) {
@@ -16502,7 +16555,7 @@ rooms:
 
       this.gotf += 1;
     ondraw: ''
-    onleave: ''
+    onleave: ct.sound.stop('dramatic')
     width: 800
     height: 600
     backgrounds:
@@ -19824,9 +19877,9 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627837640552
+    lastmod: 1627850445554
   - name: Room_05
-    oncreate: >-
+    oncreate: >
       this.text = new PIXI.Text("Se você lembra, por que está tentando voltar?
       Você gosta de sofrer?", ct.styles.get("not_main"));
 
@@ -19843,6 +19896,9 @@ rooms:
 
 
       this.gotf = 0;
+
+
+      ct.sound.spawn('dramatic', { loop: true })
     onstep: |+
 
       if ((this.text.visible != false)){
@@ -19865,7 +19921,7 @@ rooms:
       }
 
     ondraw: ''
-    onleave: ''
+    onleave: ct.sound.stop('dramatic')
     width: 800
     height: 600
     backgrounds:
@@ -23215,9 +23271,12 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627839235679
+    lastmod: 1627850465723
   - name: Room_03_2
-    oncreate: this.time = 0;
+    oncreate: |
+      this.time = 0;
+
+      ct.sound.spawn('hell')
     onstep: |-
       this.time += 0.005;
 
@@ -23225,7 +23284,7 @@ rooms:
           ct.rooms.switch('Room_02');
       }
     ondraw: ''
-    onleave: ''
+    onleave: ct.sound.stop('hell')
     width: 800
     height: 600
     backgrounds:
@@ -23242,7 +23301,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627837921400
+    lastmod: 1627850190851
   - name: Room_07
     oncreate: >-
       this.text = new PIXI.Text("Se é isso que você quer, então não podenos
@@ -23283,7 +23342,7 @@ rooms:
       }
 
     ondraw: ''
-    onleave: ''
+    onleave: ct.sound.stop('dramatic')
     width: 800
     height: 600
     backgrounds:
@@ -26613,9 +26672,9 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627843764901
+    lastmod: 1627850477451
   - name: Room_06
-    oncreate: >-
+    oncreate: >
       this.text = new PIXI.Text("Se é isso que você quer, então vá. Más
       lembre-se, o passado é uma roupa que não lhe serve mais!",
       ct.styles.get("not_main"));
@@ -26633,6 +26692,9 @@ rooms:
 
 
       this.gotf = 0;
+
+
+      ct.sound.spawn('dramatic', { loop: true })
     onstep: |+
       if ((this.text.visible != false)){
           if (this.text.x <= 2066){
@@ -30011,7 +30073,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627837778679
+    lastmod: 1627850470843
 actions:
   - name: Move
     methods:
