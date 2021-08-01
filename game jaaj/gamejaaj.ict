@@ -2436,7 +2436,7 @@ types:
     texture: 22d797b0-543e-4345-9dd8-5a9fe2ea939c
     extends: {}
     uid: bb0795a3-07de-41a6-bae2-96534e9a9056
-    lastmod: 1627781029542
+    lastmod: 1627855231197
   - name: plataformaFalsa
     depth: 3
     oncreate: ''
@@ -2639,14 +2639,19 @@ types:
     lastmod: 1627839069613
   - name: desgravida
     depth: -5
-    oncreate: this.visible = false;
-    onstep: this.move();
+    oncreate: |-
+      this.ctype = "fantasma";
+      this.visible = true;
+    onstep: |-
+      if (ct.place.occupied(this, this.x, this.y, 'Hero')){
+              this.visible = false;
+          }
     ondraw: ''
     ondestroy: ''
     texture: 8d518926-29d4-4bbe-9fed-b2e7cad00bdb
     extends: {}
     uid: 94cad546-9e29-41be-b1c2-05087c55c1d1
-    lastmod: 1627777962484
+    lastmod: 1627855069757
   - name: telefoneGrande
     depth: 0
     oncreate: |-
@@ -2854,6 +2859,8 @@ rooms:
 
 
       ct.sound.spawn('Personality_1', { loop: true })
+
+      ct.sound.volume('Personality_1', 0.4);
     onstep: |+
       if (this.text.x <= 2972){
           this.text.x = 3008;
@@ -5519,13 +5526,16 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627850418915
+    lastmod: 1627854251708
   - name: Room_00
     oncreate: ''
     onstep: |-
-      if (ct.actions.Move)
-          if (!ct.sound.playing('odisseia_1'))
+      if (ct.actions.Move){    
+          if (!ct.sound.playing('odisseia_1')){
               ct.sound.spawn('odisseia_1', { loop: true } )
+              ct.sound.volume('odisseia_1', 0.4);
+          }
+      }
 
       if (ct.actions.Launch.down){
           ct.rooms.switch('Room_04');
@@ -5549,12 +5559,13 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627851788450
+    lastmod: 1627854189616
   - name: Room_03
     oncreate: |
       this.time = 0;
 
       ct.sound.spawn('hell')
+      ct.sound.volume('hell', 0.4);
     onstep: |-
       this.time += 0.005;
 
@@ -5579,7 +5590,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627851586185
+    lastmod: 1627854310149
   - name: Room_02
     oncreate: >
       this.text = new PIXI.Text("Não acredito que derrubei meus brinquedos no
@@ -5593,6 +5604,8 @@ rooms:
 
 
       ct.sound.spawn('Personality', { loop: true })
+
+      ct.sound.volume('Personality', 0.4);
     onstep: |
       if (this.text.x <= 2972){
           this.text.x = 3008;
@@ -16440,7 +16453,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627850430164
+    lastmod: 1627854289797
   - name: Room_04
     oncreate: >
       this.text = new PIXI.Text("Eai cara, ainda não acredito que você quis
@@ -16486,6 +16499,8 @@ rooms:
 
 
       ct.sound.spawn('dramatic', { loop: true })
+
+      ct.sound.volume('dramatic', 0.4);
     onstep: >-
       if ((this.text.visible != false) || (this.another.visible != false) ||
       (this.onemore.visible != false)) {
@@ -19877,7 +19892,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627850445554
+    lastmod: 1627855984628
   - name: Room_05
     oncreate: >
       this.text = new PIXI.Text("Se você lembra, por que está tentando voltar?
@@ -19899,6 +19914,8 @@ rooms:
 
 
       ct.sound.spawn('dramatic', { loop: true })
+
+      ct.sound.volume('dramatic', 0.4);
     onstep: |+
 
       if ((this.text.visible != false)){
@@ -23271,12 +23288,14 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627850465723
+    lastmod: 1627854350454
   - name: Room_03_2
-    oncreate: |
+    oncreate: |+
       this.time = 0;
 
       ct.sound.spawn('hell')
+      ct.sound.volume('hell', 0.4);
+
     onstep: |-
       this.time += 0.005;
 
@@ -23301,21 +23320,20 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627850190851
+    lastmod: 1627854319575
   - name: Room_07
     oncreate: >-
-      this.text = new PIXI.Text("Se é isso que você quer, então não podenos
-      fazer nada. Más lembre-se que o passado é uma roupa que não lhe serve
-      mais.", ct.styles.get("not_main"));
+      this.text = new PIXI.Text("Desculpe, más o senhor parece com meu pai nas
+      fotos que eu vi.", ct.styles.get("not_main"));
 
 
-      this.text.x = 2112;
+      this.text.x = 3008;
 
-      this.text.y = - 256;
+      this.text.y = 256;
 
       this.number = 0;
 
-      this.text.visible = false;
+      this.text.visible = true;
 
       this.addChild(this.text);
 
@@ -23323,14 +23341,14 @@ rooms:
       this.gotf = 0;
     onstep: |+
       if ((this.text.visible != false)){
-          if (this.text.x <= 2066){
-              this.text.x = 2112;
+          if (this.text.x <= 2982){
+              this.text.x = 3008;
           } else {
               this.text.x -= 0.25; 
           }
 
-          if (this.text.y <= - 220){
-              this.text.y = - 256;
+          if (this.text.y <=  220){
+              this.text.y = 256;
           } else {
               this.text.y -= 0.25; 
           } 
@@ -24667,10 +24685,6 @@ rooms:
         'y': 512
         uid: e49cde7b-479b-4a29-8fec-e51ac565e461
         exts: {}
-      - x: 2432
-        'y': 448
-        uid: bdb21fb1-4756-4eee-9e2d-943e73123d1b
-        exts: {}
       - x: 2560
         'y': 448
         uid: bdb21fb1-4756-4eee-9e2d-943e73123d1b
@@ -25471,60 +25485,8 @@ rooms:
         'y': 192
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
-      - x: 2368
-        'y': 192
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2432
-        'y': 192
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2496
-        'y': 192
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2304
-        'y': 256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2368
-        'y': 256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2432
-        'y': 256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2496
-        'y': 256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2560
-        'y': 256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
       - x: 2624
         'y': 256
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2304
-        'y': 320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2368
-        'y': 320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2432
-        'y': 320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2496
-        'y': 320
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2560
-        'y': 320
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 2624
@@ -25536,18 +25498,6 @@ rooms:
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
       - x: 2560
-        'y': 384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2496
-        'y': 384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2432
-        'y': 384
-        uid: 70d4a812-909f-4059-bab5-435c2882e828
-        exts: {}
-      - x: 2368
         'y': 384
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
@@ -26575,6 +26525,78 @@ rooms:
         'y': -384
         uid: 70d4a812-909f-4059-bab5-435c2882e828
         exts: {}
+      - x: 2560
+        'y': 256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2560
+        'y': 320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2496
+        'y': 192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2368
+        'y': 192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2432
+        'y': 192
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2304
+        'y': 256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2368
+        'y': 256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2432
+        'y': 256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2496
+        'y': 256
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2304
+        'y': 320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2368
+        'y': 320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2432
+        'y': 320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2496
+        'y': 320
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2368
+        'y': 384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2432
+        'y': 384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2496
+        'y': 384
+        uid: 70d4a812-909f-4059-bab5-435c2882e828
+        exts: {}
+      - x: 2432
+        'y': 448
+        uid: bdb21fb1-4756-4eee-9e2d-943e73123d1b
+        exts: {}
+      - x: 2560
+        'y': 448
+        uid: 94cad546-9e29-41be-b1c2-05087c55c1d1
+        exts: {}
     tiles:
       - depth: -10
         tiles:
@@ -26672,7 +26694,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627850477451
+    lastmod: 1627856221777
   - name: Room_06
     oncreate: >
       this.text = new PIXI.Text("Se é isso que você quer, então vá. Más
@@ -26695,6 +26717,8 @@ rooms:
 
 
       ct.sound.spawn('dramatic', { loop: true })
+
+      ct.sound.volume('dramatic', 0.4);
     onstep: |+
       if ((this.text.visible != false)){
           if (this.text.x <= 2066){
@@ -30073,7 +30097,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1627850470843
+    lastmod: 1627855978245
 actions:
   - name: Move
     methods:
@@ -30127,5 +30151,5 @@ settings:
   fps: 30
 fonts: []
 palette: []
-startroom: cb4ffe34-0699-409e-a94f-894bec5c8b95
+startroom: a47f2ca8-ba79-47c6-9ca9-1b3ce745f4ba
 styletick: .nan
